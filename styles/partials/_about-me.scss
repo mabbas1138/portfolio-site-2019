@@ -1,0 +1,52 @@
+.about-me-section {
+  background: $primary-color;
+  position: relative;
+  @include angle-texture;
+
+  .inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+}
+
+.about-me-text-container {
+  width: 30%;
+  margin: 0 auto;
+	text-align: left;
+
+    h2 {
+      font-family: $heading-font;
+      margin-top: 0px;
+    }
+
+    h2,
+    p {
+    	color: $secondary-color;
+      line-height: 1.5;
+    }
+ }
+
+ .about-me-info {
+   a {
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+    cursor: pointer;
+   }
+ }
+
+.portfolio-image {
+    max-width: auto;	
+    // margin-left: 100px;
+    z-index: 10000000;
+
+    img {
+      object-fit: cover;
+      border-radius: 30px;
+      height: 400px;
+      width: 400px;
+    }
+}
+

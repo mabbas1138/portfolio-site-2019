@@ -1,0 +1,118 @@
+// COLOURS //
+
+$primary-color: #cd5334;
+$secondary-color: #ffffff;
+$tertiary-color: rgb(39, 15, 96);
+;
+$quaternary-color: #2A2831;
+$quinary-color: #000000;
+$sixth-color: #9400D3;
+
+// FONTS //
+
+$heading-font: 'Bungee Shade',
+cursive;
+$heading-font2: 'Work Sans',
+sans-serif;
+$gen-font: 'Archivo Black',
+sans-serif;
+$body-font: 'Caveat',
+cursive;
+
+
+// MIXINS //
+
+@mixin curly-texture {
+    &:before {
+        background-image: url('/assets/braces-2.png');
+        background-size: repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.06;
+    }
+}
+
+@mixin angle-texture {
+    &:before {
+        background-image: url('/assets/angle.png');
+        background-size: repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.05;
+        pointer-events: none;
+    }
+}
+
+@mixin square-texture {
+    &:before {
+        background-image: url('/assets/square.png');
+        background-size: repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.06;
+    }
+}
+
+@mixin paren-texture {
+    &:before {
+        background-image: url('/assets/parentheses.png');
+        background-size: repeat;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.06;
+        z-index: -10000000;
+    }
+}
+
+
+
+//// MEDIA QUERY VARIABLES ///
+
+@mixin bp ($class) {
+
+    @if $class == desktop2 {
+        @media (max-width: 2160px) { @content; }
+    }
+
+    @else if $class == desktop1 {
+        @media (max-width: 1312px) { @content; }
+    }
+
+    @else if $class == tablet {
+        @media (max-width: 1000px) { @content; }
+    }
+
+    @else if $class == mobile2 {
+        @media(max-width: 999px) { @content; }
+    }
+
+    @else if $class == mobile {
+        @media(max-width: 586px) { @content; }
+    }
+}
+
+//// MEDIA QUERY - CHROME ONLY ////
+ 
+
+
+   

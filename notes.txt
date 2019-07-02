@@ -1,0 +1,15 @@
+TO DO
+
+PORTFOLIO
+General
+> Add Minify CSS dependency
+
+Accessibility
+> Add alt text
+> Add bg color to focus
+
+
+
+
+					
+				

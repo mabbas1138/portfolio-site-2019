@@ -1,0 +1,88 @@
+header {
+  height: 100vh;
+  width: 40%;
+	background-color: #cd5334;
+  // position: relative;
+}
+
+.headings {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+  
+    h1 {
+      text-align: left;
+      font-family: 'Caveat', cursive;;
+			font-size: 2rem;
+			width: 100%;
+    }
+
+    h2 {
+      font-family: 'Bungee Shade', cursive;
+      font-size: 1.2rem;
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+	.head-image {
+    position: relative;
+    margin: 0 auto;
+		top: 25px;
+    left: 100px;
+    width: 100%;
+
+    .toggle-head {
+      width: 200px;
+    }
+  }
+  
+  .about-me-info {
+    text-align: left;
+    width: 90%;
+    margin: 50px auto 0 auto;
+
+    p {
+      font-size: 1.3rem;
+      font-family: 'Caveat', sans-serif;
+      color: #ffffff;
+    }
+  }
+
+  .contact-container {
+    width: 100%;
+    line-height: 1.2;
+    padding-bottom: 0;
+
+    a {
+      &:hover {
+        color: $tertiary-color;
+        transition: 0.2s;
+      }
+    }
+  }
+
+
+// 	.header-icons {
+//     display: flex;
+//     flex-direction: row;
+// 		align-items: center;
+// 		text-align: center;
+//     position: relative;
+
+//     img {
+//         width: 40%;
+//     }
+
+//     p {
+//     	font-size: 3rem;
+//     	margin: 0 auto;
+// 		  color:  #ffffff;
+//     }
+// }
+
+
