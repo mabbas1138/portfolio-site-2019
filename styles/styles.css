@@ -159,13 +159,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%;
   line-height: 1.2;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   letter-spacing: 2px;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 .split-screen {
   display: -webkit-box;
@@ -335,8 +337,7 @@ header {
 
 .projects-section {
   padding: 1px;
-  height: 100vh;
-  background-color: grey; }
+  height: 100vh; }
   .projects-section h2 {
     font-family: "Bungee Shade", cursive;
     font-weight: bold;
@@ -358,7 +359,7 @@ header {
 .giphy-bg {
   background: green; }
 
-.projects-triptych {
+.projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +371,7 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: -30px; }
-  .projects-triptych span {
+  .projects-list span {
     color: #ffffff; }
 
 .project-image {
@@ -379,7 +380,7 @@ header {
   top: 100px;
   border-radius: 5%; }
 
-.planted-text {
+.project-text {
   color: black;
   margin: 120px 0 0 250px;
   width: 50%; }
@@ -388,20 +389,15 @@ header {
   position: absolute;
   text-align: center; }
 
-.button__wrap {
+.nav-buttons {
   position: absolute;
-  height: 50px;
-  width: 160px;
-  bottom: 1vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  bottom: 4vh; }
+  bottom: 50px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between; }
 
 .button {
   height: 30px;
@@ -409,8 +405,8 @@ header {
   border-radius: 5px;
   border: 1px solid white;
   background: transparent;
-  color: white;
-  outline: black; }
+  color: black;
+  border: 1px solid green; }
 
 .skills-section {
   background: #270F60;
