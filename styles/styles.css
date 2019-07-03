@@ -158,7 +158,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 125%;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin: 0; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -335,7 +336,7 @@ header {
 .projects-section {
   padding: 1px;
   height: 100vh;
-  background: #270F60; }
+  background-color: grey; }
   .projects-section h2 {
     font-family: "Bungee Shade", cursive;
     font-weight: bold;
@@ -345,6 +346,18 @@ header {
     font-size: 1.5rem;
     color: #ffffff; }
 
+.planted-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#0c340c));
+  background-image: -webkit-linear-gradient(left, #ffffff, #0c340c);
+  background-image: -o-linear-gradient(left, #ffffff, #0c340c);
+  background-image: linear-gradient(to right, #ffffff, #0c340c); }
+
+.budget-bg {
+  background: red; }
+
+.giphy-bg {
+  background: green; }
+
 .projects-triptych {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,8 +366,9 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: -30px; }
   .projects-triptych span {
     color: #ffffff; }
@@ -364,6 +378,39 @@ header {
   position: relative;
   top: 100px;
   border-radius: 5%; }
+
+.planted-text {
+  color: black;
+  margin: 120px 0 0 250px;
+  width: 50%; }
+
+.portfolio-piece {
+  position: absolute;
+  text-align: center; }
+
+.button__wrap {
+  position: absolute;
+  height: 50px;
+  width: 160px;
+  bottom: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 4vh; }
+
+.button {
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  outline: black; }
 
 .skills-section {
   background: #270F60;
@@ -386,6 +433,7 @@ header {
     width: 40px; }
 
 .badges {
+  display: none;
   margin: 10px; }
 
 .project-github {

@@ -1,12 +1,20 @@
 $(document).ready(function(){
 
 	const badges = $('.badges')
+				back = $('#back');
+				next = $('#forward');
+				projects = ['#planted-slide', '#budget-slide', '#giphy-slide']
+				backgrounds = ['.planted-bg', '.budget-bg', '.giphy-bg']
+
+	TweenMax.set(backgrounds, {opacity: 0, scaleX: 0})
+
 
 
 // INITIALIZE
 
 	function init() {
-  	animationOnInitialLoad();
+		animationOnInitialLoad();
+		navSlides();
 
 	};
 
@@ -30,22 +38,24 @@ $(document).ready(function(){
 		function circleForever() {
 			TweenMax.to(badges, 5, {rotation: "+=360", ease:Linear.easeNone, onComplete:circleForever})
 		}
-	
-	// Reveal-On-Intro (ROI)
-
-  	// tlBadges
-    // 	.staggerFromTo(badges, 0.3, {x: 0, display: 'none'}, {x: 120, display: 'block', ease:Power3.ease, onComplete:circleForever
-    // }, 0.3)
-		// .to(badges, 0., {}, '-=0.1')
-};
+	}
 
 // 'Planted' slide
 
+	if ($('.portfolio-piece' === '#planted-slide')) {
+		$('.projects-section').addClass('planted')
+
+	} else {
+		return;
+	}
 
 
-// 'PROJECTS' -- FADE IN ON SCROLL
+// PROJECT SECTION - NAVIGATE TO NEXT SLIDE 
+
+	function navSlide() {
 
 
 
 
+	}
 });

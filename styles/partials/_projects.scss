@@ -1,7 +1,7 @@
 .projects-section {
   padding: 1px;
   height: 100vh;
-  background: $tertiary-color;
+  background-color: grey;
 
   h2 {
     font-family: $heading-font;
@@ -14,11 +14,24 @@
   }
 }
 
+  .planted-bg {
+    background-image: linear-gradient(to right, #ffffff, #0c340c);
+  }
+
+  .budget-bg {
+    background: red
+  }
+
+  .giphy-bg {
+    background: green;
+  }
+
 .projects-triptych {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: -30px;
+  
   span {
     color: #ffffff;
   }
@@ -30,6 +43,46 @@
   top: 100px;
   border-radius: 5%;
 }
+
+#planted-slide,
+#budget-slide,
+#giphy-slide {
+  // display: none;
+}
+
+.planted-text {
+  color: black;
+  margin: 120px 0 0 250px;
+  width: 50%;
+
+}
+
+.portfolio-piece {
+  position: absolute;
+  text-align: center;
+}
+
+.button__wrap {
+  position: absolute;
+  height: 50px;
+  width: 160px;
+  bottom: 1vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 4vh;
+}
+
+.button {
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  outline: black;
+}
+
 
 .skills-section {
   background: $tertiary-color;
@@ -52,7 +105,7 @@
 }
 
 .badges{
-  // display: flex;
+  display: none;
   // justify-content: space-around;
   margin: 10px;
 }
