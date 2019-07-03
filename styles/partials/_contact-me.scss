@@ -2,32 +2,32 @@
     background: $primary-color;
     padding: 1px;
 		position: relative;
-		@include paren-texture;
-		z-index: 100;
+}
 
-		
-	.reach-out-user-message-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		text-align: center;
-		padding: 30px 0;
+.contact-container {
+	width: 100%;
+	line-height: 1.2;
+	padding-bottom: 0;
+
+
+	img {
+		width: 50px;
 	}
 
-	.contact-heading-and-icon {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
+	.linkedin-logo {
+		width: 60px;
+	}
 
-    .contact-main-heading {
-      font-family: $heading-font;
-      font-weight: bold;
-    }
+}
 
-		.bullhorn {
-			width: 100px;
-			padding: 40px 0 0 10px;
-		}
+.twitter-logo{
+	border-radius: 10%;
+}
+
+.contact-link a {
+	:hover {
+		transform: scale(1.5, 1.5);
+		transition: 0.2s ease;
 	}
 }
 
@@ -36,6 +36,8 @@
 	flex-direction: row;
 	justify-content: center;
 	margin-left: -50px;
+	position: relative;
+	top: 20px;
 
 	li {
 		font-size: 2rem;
@@ -45,148 +47,8 @@
 
 		a:focus-within {
 			color: $sixth-color;
-
 		}
 	}
 
-.contact-heading,
-.get-in-touch-heading {
-  color: $secondary-color;
-	font-family: 'Raleway', sans-serif;
-	font-size: 2rem;
-  font-weight: bold;
-	text-transform: uppercase;
-}
 
-.contact-heading {
-		margin: 0 0 50px 0;
-}
 
-.get-in-touch-heading {
-		margin: 0 0 40px 0;
-}
-
-.user-message {
-  text-align: center;
-	flex-direction: column;
-	width: 40%;
-
-  input[type=text],
-	input[type=email],
-  textarea {
-      width: 400px;
-			margin: 10px 0;
-			background: $primary-color;
-			border-bottom: 2px solid $secondary-color;
-			border-top: none;
-			border-right: none;
-			border-left: none;
-			color:$secondary-color;
-			font-style: italic;
-
-			&::placeholder {
-				color: $secondary-color;
-			}
-
-			&:focus-within {
-				border: 1px solid $secondary-color;
-				background: $tertiary-color;
-			}
-  }
-
-	.email-error {
-		display: block;
-		font-family: $body-font;
-		color: $secondary-color;
-		border-radius: 50px;
-		background-color: $tertiary-color;
-		width: 60%;
-		margin: 0 auto;
-	}
-
-	.submit-message-container {
-		width: 80%;
-		margin-left: 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		text-align: center;
-
-		.send-text {
-			font-family: 'Raleway', sans-serif;
-			font-size: 1.1rem;
-			text-transform: uppercase;
-			margin: 0;
-		}
-	}
- }
-
-.reset {
-	width: 100px;
-	height: 100px;
-	text-transform: uppercase;
-  color: $secondary-color;
-  background: $tertiary-color;
-	border: none;
-	border-radius: 50%;
-
-	&:hover {
-		color: $primary-color;
-		transition: 0.2s;
-	}
-	
-	&:focus-within {
-		border: 5px solid $tertiary-color;
-		background: $sixth-color;
-	}
-}
-
-.submit-form {
-  width: 100px;
-	height: 100px;
-	padding: 10px;
-  color: $secondary-color;
-  background-color: $tertiary-color;
-  border: none;
-  border-radius: 50%;		
-  position: relative;
-
-  &:hover {
-    color: $primary-color;
-		transition: 0.2s;
-  }
-
-  &:focus-within {
-    outline: none;
-    background-color: $sixth-color;
-  }
-}	
-
-.sent-hand {
-	width: 35%;
-	padding-top:7px;
-
-}
-
-.wider {
-	width: 150px;
-	height: 150px;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: inline;
-}
-
-.done {
-  background-color: $quinary-color;
-	color: $secondary-color;
-}
-
-.revert-send {
-	background-color: $tertiary-color; 
-}

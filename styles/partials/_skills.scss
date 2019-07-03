@@ -1,37 +1,32 @@
-.skills-section {
-    background: $tertiary-color;
-    padding: 1px;
-    text-align: center;
-    position: relative;
-    @include square-texture;
+// .skills-section {
+//     background: $tertiary-color;
+//     padding: 1px;
+//     text-align: center;
+//     position: relative;
+// }
 
-    h2 {
-        font-family: $heading-font;
-        font-weight: bold;
-	    color: $secondary-color;
-        width: 100%;
-        margin: 40px auto 70px auto;
-    }
-}
+// .skills-gallery {
+//     display: grid;
+//     grid-template-columns: repeat(5, 1fr);
+//     grid-template-rows: 150px 200px;
+//     grid-gap: 80px;
 
-.skills-gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 150px 200px;
-    grid-gap: 80px;
+//     p {
+// 		color: $secondary-color;
+//     }
+// }
 
-    img {
-    	width: 45%;
-		color: white;
-    }
+// .skills-gallery img {
 
-    p {
-		color: $secondary-color;
-    }
-}
+//     width: 45%;
+//     display: none;
+//     // color: white;
 
-.firebase-icon {
-    img {
-        width: 40%;
-    }
-}
+// }
+
+// .firebase-icon img {
+//     display: block;
+//     position: relative;
+//     width: 40%;
+// }
+
