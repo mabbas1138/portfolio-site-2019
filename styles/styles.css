@@ -261,8 +261,8 @@ header {
   position: relative;
   margin: 0 auto;
   top: 25px;
-  left: 100px;
-  width: 100%; }
+  left: 5px;
+  width: 47%; }
   .head-image .toggle-head {
     width: 200px; }
 
@@ -335,13 +335,12 @@ header {
 .projects-section {
   padding: 1px;
   height: 100vh;
-  background: #270F60;
-  position: relative; }
+  background: #270F60; }
   .projects-section h2 {
     font-family: "Bungee Shade", cursive;
     font-weight: bold;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 0;
     font-size: 1.5rem;
     color: #ffffff; }
@@ -355,14 +354,16 @@ header {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-top: -30px; }
   .projects-triptych span {
     color: #ffffff; }
 
 .project-image {
-  width: 500px;
+  width: 600px;
   position: relative;
-  top: 100px; }
+  top: 100px;
+  border-radius: 5%; }
 
 .skills-section {
   background: #270F60;
@@ -370,16 +371,30 @@ header {
   text-align: center; }
 
 .skills-gallery {
-  width: 100px;
+  width: 90%;
   position: relative;
-  bottom: 200px;
-  right: 60px; }
+  bottom: 390px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .skills-gallery img {
     width: 40px; }
 
 .badges {
-  display: none;
-  margin: 10px auto; }
+  margin: 10px; }
+
+.project-github {
+  width: 20%;
+  position: relative;
+  top: 170px;
+  left: 450px; }
+  .project-github img {
+    width: 60px; }
 
 .contact-me-section {
   background: #cd5334;
@@ -419,7 +434,7 @@ header {
   justify-content: center;
   margin-left: -50px;
   position: relative;
-  top: 20px; }
+  top: 30px; }
   .contact-methods li {
     font-size: 2rem;
     padding: 0 10px;

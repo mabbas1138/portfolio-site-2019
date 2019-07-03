@@ -2,13 +2,12 @@
   padding: 1px;
   height: 100vh;
   background: $tertiary-color;
-  position: relative;
 
   h2 {
     font-family: $heading-font;
     font-weight: bold;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 0;
     font-size: 1.5rem;
     color: $secondary-color;
@@ -19,20 +18,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  margin-top: -30px;
   span {
     color: #ffffff;
   }
 }
 
 .project-image {
-  width: 500px;
+  width: 600px;
   position: relative;
   top: 100px;
+  border-radius: 5%;
 }
-// .hi-2 {
-//   overflow: scroll;
-// }
 
 .skills-section {
   background: $tertiary-color;
@@ -42,10 +39,12 @@
 }
 
 .skills-gallery {
-  width: 100px;
+  width: 90%;
   position: relative;
-  bottom: 200px;
-  right: 60px;
+  bottom: 390px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
 
   img {
     width: 40px;
@@ -53,7 +52,18 @@
 }
 
 .badges{
-  display: none;
-  margin: 10px auto;
+  // display: flex;
+  // justify-content: space-around;
+  margin: 10px;
 }
 
+.project-github {
+  width: 20%;
+  position: relative;
+  top: 170px;
+  left: 450px;
+
+  img {
+    width: 60px
+  }
+}

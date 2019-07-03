@@ -14,12 +14,11 @@ $(document).ready(function(){
 
 	const controller = new ScrollMagic.Controller();
 
-	TweenMax.set(badges, {x: -150})
 
 
-// PROGRAM BADGES
+// PROGRAM BADGES //
 
-// First Slide
+// First Slide 
 
 
 	function animationOnInitialLoad(){
@@ -34,18 +33,18 @@ $(document).ready(function(){
 	
 	// Reveal-On-Intro (ROI)
 
-  	tlBadges
-    	.staggerFromTo(badges, 0.3, {x: 0, display: 'none'}, {x: 120, display: 'block', ease:Power3.ease, onComplete:circleForever
-    }, 0.3)
+  	// tlBadges
+    // 	.staggerFromTo(badges, 0.3, {x: 0, display: 'none'}, {x: 120, display: 'block', ease:Power3.ease, onComplete:circleForever
+    // }, 0.3)
 		// .to(badges, 0., {}, '-=0.1')
 };
 
+// 'Planted' slide
 
-
-// ROI Scene
 
 
 // 'PROJECTS' -- FADE IN ON SCROLL
+
 
 
 

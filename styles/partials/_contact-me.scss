@@ -1,14 +1,13 @@
 .contact-me-section {
-    background: $primary-color;
-    padding: 1px;
-		position: relative;
+  background: $primary-color;
+  padding: 1px;
+	position: relative;
 }
 
 .contact-container {
 	width: 100%;
 	line-height: 1.2;
 	padding-bottom: 0;
-
 
 	img {
 		width: 50px;
@@ -17,7 +16,6 @@
 	.linkedin-logo {
 		width: 60px;
 	}
-
 }
 
 .twitter-logo{
@@ -37,7 +35,7 @@
 	justify-content: center;
 	margin-left: -50px;
 	position: relative;
-	top: 20px;
+	top: 30px;
 
 	li {
 		font-size: 2rem;
