@@ -1,85 +1,29 @@
-.nav-bar {
-    position: absolute;
-    right: 0;
-    width: 300px;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    z-index: 1000000;
-
-    // .nav-links {
-    // //   position: absolute;
-    //   top: 5px;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: space-between;
-    //   align-items: flex-end;
-    //   text-transform: uppercase;
-    //   padding-bottom: 15px; 
-    //   position: relative;
-    // };
-}; 
-
-.test-ham {
-    background: none;
-    border: none;
-    color: black;
-    display: inline-block;
-    font-size: 5px;
-}
-
-.nav-links a {
-    cursor: pointer;
-    position: relative;
-    display:inline-block;
-    padding:5px 10px;
-    text-align: center;
-    text-decoration: none;
-    color: $secondary-color;
-
-    &:active {
-        background: $primary-color;
-    }
-};
-
-.custom-underline::after {
-    content: "";
-    position: absolute;
-    border-radius: 10px;
-}
-
-.highlight-link {
-    border: 3px solid red;
-}
-.nav-section .custom-underline::after {
-    top: 80%;
-    left: 0;
-    right: 0;
-    height: 4px;
-    width: 0%;
-    background-color: $secondary-color;
-    transition: 0.5s ease all .3s;
-}
-
-.nav-section:hover .custom-underline::after {
+/* white circles */
+.flickity-page-dots {
     width: 100%;
-    transition: 0.3s ease all;
+    margin: 0 auto;
+    position: relative;
+    bottom: 90px;
+
 }
 
-@keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.flickity-page-dots .dot {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid black;
+
 }
 
-.nav-scroll {
-    position: fixed;
-    height: 80px;
-    z-index: 10;
-    background: rgba(40, 48, 68, 0.4);
-    color: $quinary-color;
-    animation: fade-in 0.5s;
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: yellow;
+    transition: 0.5s ease-in-out;
 }
 
-// HAMBURGER MENU
-
-
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: green;
+}

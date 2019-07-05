@@ -39,15 +39,19 @@ body {
 .split-screen {
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 img {
   max-width: 100%;
 }
 
-li {
+ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
+
 
 a {
   color: white;
@@ -58,15 +62,6 @@ h1 {
   font-family: 'Bungee Shade', cursive;
   font-size: 4rem;
   letter-spacing: 2px;
-  color: black;
-}
-
-h2 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   color: black;
 }
 

@@ -8,35 +8,29 @@
 		<title>Moe Abbas' Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Caveat|Archivo+Black|Work+Sans:400,600,700,800"
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee+Shade|Caveat|Archivo+Black|Work+Sans:400,600,700,800|Fjalla+One"
       rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>	
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
 		<link rel="stylesheet" href="styles/styles.css">
 		<script src="/scripts/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body class="inner-wrapper">
   <a href="#main-content" class="skip-link">Skip to main content.</a>
-  
-	<!-- <nav class="nav-bar">
-		<ul class="nav-links">
-			<li class="nav-section index"><a href="#index" class="custom-underline">Home</a></li>
-			<li class="nav-section projects custom-underline"><a href="#projects" class="custom-underline">Projects</a></li>
-		</ul>
-  </nav> -->
 
   <div class="split-screen">
-  <header id="index">
+  <header id="index inner-wrapper">
   	<div class="headings">
   		<h1 id="name">Moe Abbas</h1>
   		<h2 id="position">Front-End <br>Web Developer</br></h2>
   	</div>
   	<div class="head-image">
-  		<object type="image/svg+xml" data="./assets/misc-images/me-lines.svg" alt="" class="toggle-head" id="big-head"></object>
+        <img src="./assets/misc-images/me-head.png" alt="" class="toggle-head" id="big-head"></img>
     </div>
     <div class="about-me-info">
-      <p> I'm a Toronto-based developer with an interest in exploring the intersection of art and technology. In my
-        spare time, I write comics, learn new recipes, and watch basketball.
+      <p> I'm a Toronto-based developer with an interest in exploring the intersection of art and technology. I also
+        write comics and XXXX.
       </p>
     </div>
     <div>
@@ -46,7 +40,7 @@
 		    <ul class="contact-methods">
 		      <li class="contact-link">
             <a href="mailto:mabbas@mabbas.codes" aria-label="Email Moe">
-		          <img src="assets/misc-images/email-logo.svg" aria-hidden/><span class="visually-hidden">Email</span>
+		          <img src="assets/misc-images/email-icon.svg" aria-hidden/><span class="visually-hidden">Email</span>
 		        </a>
 		      </li>
 		      <li class="contact-link">
@@ -57,7 +51,7 @@
 		      </li>
 		      <li class="contact-link">
             <a href="https://www.github.com/mabbas1138" target="_blank" aria-label="Go to Moe's GitHub Page">
-              <img src="./assets/misc-images/github-cat.png" alt="" aria-hidden/><span class="visually-hidden">GitHub</span>
+              <img src="./assets/misc-images/github-white.svg" alt="" aria-hidden/><span class="visually-hidden">GitHub</span>
             </a>
           </li>
 		      <li class="contact-link">
@@ -68,6 +62,7 @@
 		    </ul>
     </div>
     <div>
+    <div class="progress-bar"></div>
 	<footer>
 	  <div class="footer-text">
 	    <p class="copyright">Copyright &copy; Moe Abbas 2019</p>
@@ -77,23 +72,79 @@
     </div>
   </header>
   
-	<main class="inner-wrapper">
+	<main class="inner-wrapper clearfix">
 		<section class="projects-section" id="projects">
-      <h2>My Work</h2>
-			<div class="projects-triptych" id="main-content">
-        <div class="program-badges">
-          <div class="project-badges">
-            
+
+			<div class="carousel" data-flickity='{"prevNextButtons": false}' id="main-content">
+         
+        <div class="portfolio-piece planted-site" id="planted-site">
+          <div class="project-heading">
+            <h2>Planted</h2>
           </div>
-        </div>
-        <div class="portfolio-piece">
-          <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image">
-        </div>
-        <div class="piece-text">
+          <div class="project-text" id="planted-text">
+            <p>
+              PSD conversion to<br>multi-page site.</br>
+            </p>
+          </div>
+          <div class="project-img-link" >
+            <a href="www.planted.com" >
+              <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image" id="site-planted-img" />
+            </a>
+            <div class="skills-gallery">
+             <img src="./assets/program-badges/html5.svg" class="badges" id="html5" />
+              <img src="./assets/program-badges/css3.svg" class="badges" id="css3" />
+  	          <img src="./assets/program-badges/sass-logo.svg" class="badges" id="sass" />
+            </div>
+          </div> 
+          <img class="github-project">
+             <img src="./assets/program-badges/github-white.png" class="github-for-project" id="github-for-project" />
+          </img>
 
         </div>
+
+        <div class="portfolio-piece budget-site" id="budget-site">
+          <div class="project-heading">
+            <h2>Budget</h2>
+          </div>
+          <div class="project-img-link">
+            <a href="www.planted.com">
+              <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image" id="site-budget-img" />
+            </a>
+          </div>
+          <div class="piece-text">
+            <p>Test</p>
+          </div>
+        </div>
+
+        <div class="portfolio-piece giphy-site" id="giphy-site">
+          <div class="project-heading">
+            <h2>Giphy</h2>
+          </div>
+          <div class="project-img-link">
+            <a href="www.planted.com">
+              <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image" id="site-giphy-img" />
+            </a>
+          </div>
+          <div class="piece-text">
+            <p>Test</p>
+          </div>
+                 
+        </div>
+
       </div>
-      <div class="skills-gallery" id="skills">
+
+      <!-- <ul class="buttons">
+        <li id="go-to-planted">
+          <a href="#planted-site">1</a>
+        </li>
+        <li id="go-to-budget">
+          <a href="#budget-site">2</a>
+        </li>
+        <li id="go-to-giphy">
+          <a href="#giphy-site">3</a>
+        </li>
+      </ul> -->
+      <!-- <div class="skills-gallery" id="skills">
   	  <div>
   	    <img src="./assets/program-badges/html5.svg" class="badges" id="html5" />
   	  </div>
@@ -121,7 +172,7 @@
   	  <div>
   	    <img src="./assets/program-badges/github-white.png" class="badges" id="github" />
       </div>
-      </div>
+      </div> -->
 		</section>
 	</main>
   </div>
@@ -135,23 +186,19 @@
   </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.extensions.min.js"></script> -->
 
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
 	<script src="/scripts/MorphSVGPlugin.min.js"></script> -->
-	
-	<!-- ScrollMagic  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.js"></script>
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="scripts/TweenMax.min.js"></script>
-    <script src="scripts/ScrollToPlugin.min.js"></script>
+    <script src="scripts/CSSPlugin.min.js"></script>
     <script src="scripts/CustomEase.min.js"></script>
     <script src="scripts/CustomWiggle.min.js"></script>
     <script src="scripts/BezierPlugin.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
 	<script src="./scripts/app.js"></script>
 </body>
 </html>

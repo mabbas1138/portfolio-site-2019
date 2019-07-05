@@ -1,59 +1,129 @@
 .projects-section {
+  height: 100vh;
+  width: 99.9%;
+}
+
+.carousel {
   padding: 1px;
   height: 100vh;
-  background: $tertiary-color;
+  // background: grey;
   position: relative;
+}
+
+
+.portfolio-piece {
+  width: 100%;
+  height: 100%;
+  /* center images in cells with flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+#planted-site {
+background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+  z-index: -1;
+
 
   h2 {
-    font-family: $heading-font;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    color: $secondary-color;
+    color: green;
   }
 }
 
-.projects-triptych {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  span {
-    color: #ffffff;
-  }
+#budget-site {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+#giphy-site {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
 .project-image {
   width: 500px;
+  // height: 100%;
+  border-radius: 10% 10%;
+  cursor: pointer;
   position: relative;
-  top: 100px;
+  z-index: 100;
 }
-// .hi-2 {
-//   overflow: scroll;
-// }
 
-.skills-section {
-  background: $tertiary-color;
-  padding: 1px;
+.project-img-link {
+  position: relative;
+  bottom: 150px;
+}
+
+.project-heading{
+  position: relative;
+  bottom: 100px;
+
+  h2 {
+  font-family: 'Fjalla One', cursive;
+  font-size: 3rem;
+  width: 100%;
+  text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
+  color: gray;
+  letter-spacing: 5px;
+  text-shadow: $shadow 1px 1px,
+    $shadow 2px 2px,
+    $shadow 3px 3px,
+    $shadow 4px 4px;
+}
+}
 
+.project-text {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  color: black;
+
+  p {
+    font-family: 'Fjalla One', sans-serif;
+  }
+ 
+}
+
+#planted-text {
+  p {
+    color: green;
+  }
 }
 
 .skills-gallery {
-  width: 100px;
-  position: relative;
-  bottom: 200px;
-  right: 60px;
-
-  img {
-    width: 40px;
-  }
+  width: 40px;
+  // z-index: -1;
+  position: absolute;
+  bottom: 100px;
+  left: 190px;
+  display: flex;
 }
 
+// .skills-gallery {
+//   // width: 500px;
+//   // position: relative;
+//   // display: flex;
+//   // bottom: 400px;
+//   // left: 300px;
+//   // z-index: 0;
+ 
+
+//   img {
+//     width: 40px;
+//   }
+// }
+
+
 .badges{
-  display: none;
+  // display: none;
   margin: 10px auto;
 }
 
+.github-for-project {
+  position: absolute;
+  top: 300px;
+  width: 50px;
+}
