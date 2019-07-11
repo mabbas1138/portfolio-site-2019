@@ -166,6 +166,10 @@ body {
   letter-spacing: 2px;
   margin: 0; }
 
+.carousel:after {
+  content: 'flickity';
+  display: none; }
+
 .split-screen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,10 +231,7 @@ p {
 header {
   height: 100vh;
   width: 40%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#405166), to(#656f6f));
-  background: -webkit-linear-gradient(top, #405166 0%, #656f6f 100%);
-  background: -o-linear-gradient(top, #405166 0%, #656f6f 100%);
-  background: linear-gradient(to bottom, #405166 0%, #656f6f 100%); }
+  background: #200f49; }
 
 .headings {
   width: 80%;
@@ -263,7 +264,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
-    color: white;
+    color: lightblue;
     letter-spacing: 5px;
     text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; }
 
@@ -271,85 +272,42 @@ header {
   position: relative;
   margin: 0 auto;
   top: 25px;
+  left: 10px;
   width: 38%; }
   .head-image .toggle-head {
-    width: 156px; }
+    width: 200px; }
 
 .about-me-info {
   text-align: left;
-  width: 90%;
-  margin: 50px auto 0 auto; }
+  width: 80%;
+  margin: 50px auto 0 auto;
+  overflow-wrap: normal; }
   .about-me-info p {
     font-size: 1.3rem;
     font-family: 'Caveat', sans-serif;
     color: white;
     font-weight: 50; }
 
-.about-me-section {
-  background: #cd5334;
-  position: relative; }
-  .about-me-section:before {
-    background-image: url("/assets/angle.png");
-    background-size: repeat;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.05;
-    pointer-events: none; }
-  .about-me-section .inner-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 50px; }
+.skills-gallery {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-gap: 5px; }
 
-.about-me-text-container {
-  width: 30%;
-  margin: 0 auto;
-  text-align: left; }
-  .about-me-text-container h2 {
-    font-family: "Bungee Shade", cursive;
-    margin-top: 0px; }
-  .about-me-text-container h2,
-  .about-me-text-container p {
-    color: #ffffff;
-    line-height: 1.5; }
-
-.about-me-info a {
-  color: #cd5334;
-  border-bottom: 2px solid #cd5334;
-  cursor: pointer; }
-
-.portfolio-image {
-  max-width: auto;
-  z-index: 10000000; }
-  .portfolio-image img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 30px;
-    height: 400px;
-    width: 400px; }
+.gallery-badges {
+  width: 40px; }
 
 .projects-section {
   height: 100vh;
-  width: 99.9%; }
+  width: 100%; }
 
 .carousel {
-  padding: 1px;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  padding-top: -1px; }
 
 .portfolio-piece {
   width: 100%;
@@ -370,23 +328,25 @@ header {
   justify-content: center; }
 
 #planted-site {
-  background: -webkit-linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
-  background: -o-linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   position: relative;
-  z-index: -1; }
+  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#eae6e1), color-stop(#f5e1b1), color-stop(#ede182), color-stop(#d4e552), to(#a8eb12));
+  background-image: -webkit-linear-gradient(left, #eae6e1, #f5e1b1, #ede182, #d4e552, #a8eb12);
+  background-image: -o-linear-gradient(left, #eae6e1, #f5e1b1, #ede182, #d4e552, #a8eb12);
+  background-image: linear-gradient(to right, #eae6e1, #f5e1b1, #ede182, #d4e552, #a8eb12); }
   #planted-site h2 {
     color: green; }
 
 #budget-site {
-  background-image: -webkit-linear-gradient(330deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: -o-linear-gradient(330deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eae6e1), color-stop(#abaca5), color-stop(#6e756f), color-stop(#364240), to(#021517));
+  background-image: -webkit-linear-gradient(top, #eae6e1, #abaca5, #6e756f, #364240, #021517);
+  background-image: -o-linear-gradient(top, #eae6e1, #abaca5, #6e756f, #364240, #021517);
+  background-image: linear-gradient(to bottom, #eae6e1, #abaca5, #6e756f, #364240, #021517); }
 
 #giphy-site {
-  background-image: -webkit-linear-gradient(330deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: -o-linear-gradient(330deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
+  background: -webkit-linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: -o-linear-gradient(315deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
 
 .project-image {
   width: 500px;
@@ -409,9 +369,12 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
-    color: gray;
-    letter-spacing: 5px;
-    text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px; }
+    letter-spacing: 6px;
+    text-shadow: #533d4a 0.25px 0.25px, #533d4a 0.5px 0.5px, #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px; }
+
+.expense-heading {
+  position: relative;
+  top: 30px; }
 
 .project-text {
   position: relative;
@@ -421,25 +384,25 @@ header {
   .project-text p {
     font-family: 'Fjalla One', sans-serif; }
 
-#planted-text p {
-  color: green; }
+#budget-text {
+  width: 20%; }
 
-.skills-gallery {
-  width: 40px;
+.project-badges {
+  width: 50px;
   position: absolute;
   bottom: 100px;
-  left: 190px;
+  left: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .badges {
-  margin: 10px auto; }
+  margin-right: 10px; }
 
 .github-for-project {
   position: absolute;
   top: 300px;
-  width: 50px; }
+  width: 100px; }
 
 .contact-container {
   width: 80%;
@@ -492,9 +455,6 @@ header {
   height: 20px;
   width: 0;
   background: green; }
-
-footer {
-  margin-top: 75px; }
 
 .footer-text {
   font-size: 0.5rem;

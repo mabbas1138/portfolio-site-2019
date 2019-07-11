@@ -36,6 +36,11 @@ body {
   margin: 0;
 }
 
+.carousel:after {
+  content: 'flickity';
+  display: none;
+}
+
 .split-screen {
   display: flex;
   flex-direction: row;

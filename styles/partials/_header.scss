@@ -1,10 +1,9 @@
 header {
   height: 100vh;
   width: 40%;
-  background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+  background: #200f49;
 
 }
-
 .headings {
   width: 80%;
   display: flex;
@@ -30,7 +29,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
-    color: white;
+    color: lightblue;
     letter-spacing: 5px;
     text-shadow: $shadow 1px 1px,
       $shadow 2px 2px,
@@ -43,18 +42,19 @@ header {
     position: relative;
     margin: 0 auto;
 		top: 25px;
-    // left: 120px;
+    left: 10px;
     width: 38%;
 
     .toggle-head {
-      width: 156px;
+      width: 200px;
     }
   }
   
   .about-me-info {
     text-align: left;
-    width: 90%;
+    width: 80%;
     margin: 50px auto 0 auto;
+    overflow-wrap: normal;
 
 
     p {
@@ -64,4 +64,5 @@ header {
       font-weight: 50;
     }
   }
+
 

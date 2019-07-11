@@ -17,9 +17,9 @@
 		<script src="/scripts/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body class="inner-wrapper">
-  <a href="#main-content" class="skip-link">Skip to main content.</a>
-
-  <div class="split-screen">
+<a href="#main-content" class="skip-link">Skip to main content.</a>
+<div class="split-screen">
+  
   <header id="index inner-wrapper">
   	<div class="headings">
   		<h1 id="name">Moe Abbas</h1>
@@ -29,54 +29,82 @@
         <img src="./assets/misc-images/me-head.png" alt="" class="toggle-head" id="big-head"></img>
     </div>
     <div class="about-me-info">
-      <p> I'm a Toronto-based developer with an interest in exploring the intersection of art and technology. I also
-        write comics and XXXX.
+      <p id="about-me-text"> I'm a Toronto-based developer with an interest in the crossroads of art and technology. I also write comics and XXXX.
       </p>
     </div>
-    <div>
-    </div>
-
 		<div class="contact-container">
 		    <ul class="contact-methods">
 		      <li class="contact-link">
-            <a href="mailto:mabbas@mabbas.codes" aria-label="Email Moe">
-		          <img src="assets/misc-images/email-icon.svg" aria-hidden/><span class="visually-hidden">Email</span>
+            <a href="mailto:mabbas@mabbas.codes" aria-label="Email Moe" target="_blank">
+		          <img src="assets/misc-images/email-icon.svg" aria-hidden/><span class="visually-hidden" alt="Email Icon">Email</span>
 		        </a>
 		      </li>
 		      <li class="contact-link">
             <a href="https://www.linkedin.com/in/moe-m-abbas" target="_blank" aria-label="Go to Moe's LinkedIn Page">
-              <img src="assets/misc-images/linkedIn-blue.png" alt=""
+              <img src="assets/misc-images/linkedIn-blue.png" alt="LinkedIn Icon"
 		          aria-hidden class="linkedin-logo"/><span class="visually-hidden">LinkedIn</span>
 		        </a>
 		      </li>
 		      <li class="contact-link">
             <a href="https://www.github.com/mabbas1138" target="_blank" aria-label="Go to Moe's GitHub Page">
-              <img src="./assets/misc-images/github-white.svg" alt="" aria-hidden/><span class="visually-hidden">GitHub</span>
+              <img src="./assets/misc-images/github-white.svg" alt="GitHub Icon" aria-hidden/><span class="visually-hidden">GitHub</span>
             </a>
           </li>
 		      <li class="contact-link">
             <a href="https://twitter.com/mmmAbbasCodes" target="_blank" aria-label="Go to Moe's Twitter feed">
-              <img src="./assets/misc-images/twitter-blue.png" alt="" class="twitter-logo"aria-hidden/><span class="visually-hidden">Twitter</span>
+              <img src="./assets/misc-images/twitter-blue.png" alt="Twitter Icon" class="twitter-logo"aria-hidden/><span class="visually-hidden">Twitter</span>
             </a>
 		      </li>
 		    </ul>
     </div>
     <div>
-    <div class="progress-bar"></div>
-	<footer>
-	  <div class="footer-text">
-	    <p class="copyright">Copyright &copy; Moe Abbas 2019</p>
-      <a href="https://phenrix.wixsite.com/arts" class="photo-credit">Illustration by Juan Enriquez</a>
-	  </div>
-	</footer>
+   
     </div>
   </header>
   
 	<main class="inner-wrapper clearfix">
 		<section class="projects-section" id="projects">
+			<div class="carousel" id="main-content">
 
-			<div class="carousel" data-flickity='{"prevNextButtons": false}' id="main-content">
-         
+        <div class="skills-gallery">
+          <div class="style-badges">
+            <div>
+              <img src="./assets/program-badges/html5.svg" class="gallery-badges" id="html5" title="HTML5" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/css3.svg" class="gallery-badges" id="css3" title="CSS3" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/sass-logo.svg" class="gallery-badges" id="Sass" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/gsap-badge.svg" class="gallery-badges" id="Gsap" />
+            </div>
+          </div>
+          <div class="js-badges">
+            <div>
+              <img src="./assets/program-badges/js-logo.png" class="gallery-badges" id="js"
+                title="Vanilla JavaScript" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/jquery.svg" class="gallery-badges" id="jquery" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/react-logo.png" class="gallery-badges" id="react" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/vue-badge.svg" class="gallery-badges" id="vue" />
+            </div>
+          </div>
+          <div class="helpers-backend-badges">
+            <div>
+              <img src="./assets/program-badges/firebase-logo.svg" class="gallery-badges" id="firebase" />
+            </div>
+            <div>
+              <img src="./assets/program-badges/webpack-icon.svg" class="gallery-badges" id="webpack" />
+            </div>
+          </div>
+        </div>
         <div class="portfolio-piece planted-site" id="planted-site">
           <div class="project-heading">
             <h2>Planted</h2>
@@ -87,118 +115,100 @@
             </p>
           </div>
           <div class="project-img-link" >
-            <a href="www.planted.com" >
+            <div>
+              <a href="www.planted.com" target="_blank">
               <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image" id="site-planted-img" />
-            </a>
-            <div class="skills-gallery">
-             <img src="./assets/program-badges/html5.svg" class="badges" id="html5" />
-              <img src="./assets/program-badges/css3.svg" class="badges" id="css3" />
-  	          <img src="./assets/program-badges/sass-logo.svg" class="badges" id="sass" />
+              </a>
+            </div>
+            <div class="project-badges">
+              <img src="./assets/program-badges/html5.svg" class="badges" id="html5" title="HTML5" />
+              <img src="./assets/program-badges/css3.svg" class="badges" id="css3" title="CSS3" />
+  	          <img src="./assets/program-badges/sass-logo.svg" class="badges" id="sass" title="Sass" />
             </div>
           </div> 
-          <img class="github-project">
-             <img src="./assets/program-badges/github-white.png" class="github-for-project" id="github-for-project" />
-          </img>
-
+          <div class="github-project">
+            <a href="https://www.cnn.com" target="_blank"><img src="./assets/misc-images/github-txt-logo.png" class="github-for-project" id="github-for-project" alt="GitHub page for project" /></a>
+          </div>
         </div>
 
+      <div class="portfolio-piece budget-site" id="budget-site">
+        <div class="project-heading">
+          <h2 class="expense-heading">Expense Tracker</h2>
+        </div>
+        <div class="project-text" id="budget-text">
+          <p>
+            A simple expense tracker using plain ol' CSS and vanilla JS following an MVC pattern.
+          </p>
+        </div>
+        <div class="project-img-link">
+          <div>
+            <a href="www.planted.com" target="_blank">
+              <img src="./assets/misc-images/expense-tracker-img.png" alt="" class="project-image" id="site-budget-img" />
+            </a>
+          </div>
+          <div class="project-badges">
+            <img src="./assets/program-badges/html5.svg" class="badges" id="html5" title="HTML5" />
+            <img src="./assets/program-badges/css3.svg" class="badges" id="css3" title="CSS3" />
+  	        <img src="./assets/program-badges/js-logo.png" class="badges" id="js" title="Vanilla JavaScript"/>
+          </div>
+        </div>
+          <div class="github-project">
+            <a href="https://www.cnn.com" target="_blank"><img src="./assets/misc-images/github-txt-logo.png" class="github-for-project" id="github-for-project" alt="GitHub page for project" /></a>
+          </div>
+        </div>
+    
         <div class="portfolio-piece budget-site" id="budget-site">
           <div class="project-heading">
-            <h2>Budget</h2>
+            <h2>Meme in a Giphy</h2>
+          </div>
+          <div class="project-text" id="budget-text">
+            <p>
+              A four-person group project 
+            </p>
           </div>
           <div class="project-img-link">
-            <a href="www.planted.com">
-              <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image" id="site-budget-img" />
-            </a>
+            <div>
+              <a href="www.planted.com" target="_blank">
+                <img src="./assets/misc-images/expense-tracker-img.png" alt="" class="project-image"
+                  id="site-budget-img" />
+              </a>
+            </div>
+            <div class="project-badges">
+              <img src="./assets/program-badges/html5.svg" class="badges" id="html5" title="HTML5" />
+              <img src="./assets/program-badges/css3.svg" class="badges" id="css3" title="CSS3" />
+  	          <img src="./assets/program-badges/react-logo.png" class="badges" id="react" title="React"/>
+              <img src="./assets/program-badges/firebase-logo.svg" class="badges" id="firebase" title="Firebase"/>
+            </div>
           </div>
-          <div class="piece-text">
-            <p>Test</p>
+          <div class="github-project">
+            <a href="https://www.cnn.com" target="_blank"><img src="./assets/misc-images/github-txt-logo.png"
+                class="github-for-project" id="github-for-project" alt="GitHub page for project" /></a>
           </div>
         </div>
-
-        <div class="portfolio-piece giphy-site" id="giphy-site">
-          <div class="project-heading">
-            <h2>Giphy</h2>
-          </div>
-          <div class="project-img-link">
-            <a href="www.planted.com">
-              <img src="./assets/misc-images/planted-site-2.jpeg" alt="" class="project-image" id="site-giphy-img" />
-            </a>
-          </div>
-          <div class="piece-text">
-            <p>Test</p>
-          </div>
-                 
-        </div>
-
+      </div>
+      </div>
       </div>
 
-      <!-- <ul class="buttons">
-        <li id="go-to-planted">
-          <a href="#planted-site">1</a>
-        </li>
-        <li id="go-to-budget">
-          <a href="#budget-site">2</a>
-        </li>
-        <li id="go-to-giphy">
-          <a href="#giphy-site">3</a>
-        </li>
-      </ul> -->
-      <!-- <div class="skills-gallery" id="skills">
-  	  <div>
-  	    <img src="./assets/program-badges/html5.svg" class="badges" id="html5" />
-  	  </div>
-  	  <div>
-  	    <img src="./assets/program-badges/css3.svg" class="badges" id="css3" />
-  	  </div>
-  	  <div>
-  	   <img src="./assets/program-badges/sass-logo.svg" class="badges" id="sass" />
-  	  </div>
-  	  <div>
-  	    <img src="./assets/program-badges/js-logo.png" class="badges" id="js" />
-  	  </div>
-  	  <div>
-  	    <img src="./assets/program-badges/jquery.svg" class="badges" id="jquery" />
-  	  </div>
-  	  <div>
-  	    <img src="./assets/program-badges/react-logo.png" class="badges" id="react" />
+		  </section>
+      </main>
+	    <footer>
+	      <div class="footer-text">
+	        <p class="copyright">Copyright &copy; Moe Abbas 2019</p>
+          <a href="https://phenrix.wixsite.com/arts" target="_blank" class="photo-credit">Illustration by Juan Enriquez</a>
+	    </div>
+	    </footer>
       </div>
-  	  <div>
-  	   <img src="./assets/program-badges/firebase-logo.svg" class="badges" id="firebase" />
-  	  </div>
-  	  <div>
-  	    <img src="./assets/program-badges/webpack-icon.svg" class="badges" id="webpack" />
-  	  </div>
-  	  <div>
-  	    <img src="./assets/program-badges/github-white.png" class="badges" id="github" />
-      </div>
-      </div> -->
-		</section>
-	</main>
-  </div>
-      </div>
-	<!-- <footer>
-		<div class="footer-text">
-			<p class="copyright">Copyright &copy; Moe Abbas 2019</p>
-			<a href="https://www.pamlau.com" class="photo-credit">Photo Credit: Pam Lau</a>
-		</div>
-  </footer> -->
+    </div>
   </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.extensions.min.js"></script> -->
-
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
-	<script src="/scripts/MorphSVGPlugin.min.js"></script> -->
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="scripts/TweenMax.min.js"></script>
-    <script src="scripts/CSSPlugin.min.js"></script>
-    <script src="scripts/CustomEase.min.js"></script>
-    <script src="scripts/CustomWiggle.min.js"></script>
-    <script src="scripts/BezierPlugin.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="scripts/TweenMax.min.js"></script>
+  <script src="scripts/SplitText.min.js"></script>
+  <script src="scripts/CSSPlugin.min.js"></script>
+  <script src="scripts/CustomEase.min.js"></script>
+  <script src="scripts/CustomWiggle.min.js"></script>
+  <script src="scripts/BezierPlugin.min.js"></script>
 	<script src="./scripts/app.js"></script>
 </body>
 </html>
