@@ -1,19 +1,40 @@
 .contact-container {
-	width: 80%;
 	line-height: 1.2;
-	position: relative;
-	top: 50px;
+	margin: -20px auto 0 auto;
 
-	img {
-		width: 50px;
+	@include bp(mobile) {
+		margin: 0 auto;
+		width: 200px;
 	}
 
-	.linkedin-logo {
-		width: 60px;
+	h1	{
+		font-size: 1rem;
+		font-family: $body-font;
+		text-transform: uppercase;
+		text-align: center;
+		color: $white;
 	}
 }
 
-.twitter-logo{
+.contact-icon {
+	width: 57px;
+}
+
+#email-icon {
+	margin-top: -5px;
+	width: 63px;
+}
+
+#github-icon {
+	width: 57px;
+	margin-top: -1px;
+}
+
+#linkedin-icon {
+	width: 65px;
+}
+
+#twitter-icon {
 	border-radius: 10%;
 }
 
@@ -24,13 +45,22 @@
 	}
 }
 
-
-	.contact-methods li {
-		font-size: 2rem;
-		padding: 0 10px;
-		cursor: pointer;
-	}
+.contact-methods{
+	margin: 0 auto;
+	padding-left: 0;
 	
+	@include bp(mobile) {
+		padding-left: 0;
+	}
+}
 
+.contact-methods li {
+	font-size: 2rem;
+	padding: 0 10px;
+	cursor: pointer;
 
-
+	@include bp(mobile) {
+		padding: 0 5px;
+		margin-left: 0;
+	}
+}

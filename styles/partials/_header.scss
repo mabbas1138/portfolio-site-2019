@@ -1,68 +1,135 @@
 header {
-  height: 100vh;
-  width: 40%;
-  background: #200f49;
-
+  width: 100%;
+  background: $gradient;
 }
+
+.header-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  
+  @include bp(tablet) {
+    width: 80%;
+  }
+
+  @include bp(mobile) {
+    // position: relative;
+    // top: 10px;
+  }
+}
+
 .headings {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 50px;
+  z-index: 300;
+
+  @include bp(tablet) {
+    width: 100%;
+  }
 
   h1 {
     text-align: center;
-    font-family: 'Caveat', cursive;;
-		font-size: 1.2rem;
+    font-family: $body-font2;
+    font-size: 1.3rem;
+    font-weight: bold;
     width: 100%;
-    color: white;
+    color: $black;
     letter-spacing: 5px;
+
+    @include bp(mobile) {
+      font-size: 1rem;
+    }
   }
 
   h2 {
-    font-family: 'Fjalla One', cursive;
+    font-family: $heading-font;
     font-size: 1.5rem;
     width: 100%;
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
-    color: lightblue;
+    color: $white;
     letter-spacing: 5px;
     text-shadow: $shadow 1px 1px,
       $shadow 2px 2px,
       $shadow 3px 3px,
       $shadow 4px 4px;
+
+      @include bp(tablet) {
+        font-size: 1.3rem;
+      }
+
+      @include bp(mobile) {
+        font-size: 1rem;
+      }
+
+      &:last-child {
+        margin-top: -15px;
+      }
   }
 }
 
-	.head-image {
-    position: relative;
-    margin: 0 auto;
-		top: 25px;
-    left: 10px;
-    width: 38%;
+	.whole-head {
+    display: flex;
+    flex-direction: column;
 
-    .toggle-head {
+    @include bp(desktop1) {
+      margin: 0 auto;
+    }
+  
+    @include bp(tablet) {
+      margin: 0 auto;
+    }
+
+    @include bp(tablet) {
+        margin: 0 auto;
+    }
+
+    @include bp(mobile) {
+      margin: 0 auto;
+    }
+
+    #top-head,
+    #bottom-head {
       width: 200px;
+      margin: 0 auto;
+    }
+
+    #top-head {
+      z-index: 500;
+      position: relative;
+      top: 19px;
+    }
+
+    #bottom-head {
+      z-index: 1;
     }
   }
   
   .about-me-info {
-    text-align: left;
+    text-align: center;
     width: 80%;
-    margin: 50px auto 0 auto;
-    overflow-wrap: normal;
+    margin: 0 auto 0 auto;
 
+    @include bp(tablet) {
+      width: 100%;
+    }
 
     p {
-      font-size: 1.3rem;
-      font-family: 'Caveat', sans-serif;
-      color: white;
+      font-size: 1.5rem;
+      font-family: $body-font2;
+      color: $black;
       font-weight: 50;
+
+      @include bp(mobile) {
+        font-size: 1.2rem;
+      }
     }
   }
-
-
