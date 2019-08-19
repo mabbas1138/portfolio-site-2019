@@ -1,27 +1,13 @@
-footer {
-  // margin-top: 75px;
-}
-
-.footer-text {
-    font-size: 0.5rem;
-    // text-align: center;
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background: black;
-    padding-bottom: 3px;
-
-    .copyright {
-      // padding-top: 5px;
-      padding-right: 20px;
-      font-weight: bold;
-    }
-
-    .photo-credit {
+    color: $white;
+    background: $black;
+  
+    .footer-text {
       font-size: 0.5rem;
       font-weight: bold;
-  
-      // margin-top: 5px;
+      padding: 5px;
     }
 }

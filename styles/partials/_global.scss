@@ -30,21 +30,10 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $body-font;
   font-size: 1rem;
   letter-spacing: 2px;
   margin: 0;
-}
-
-.carousel:after {
-  content: 'flickity';
-  display: none;
-}
-
-.split-screen {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
 }
 
 img {
@@ -63,16 +52,9 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 4rem;
-  letter-spacing: 2px;
-  color: black;
-}
-
 p {
   letter-spacing: 1px;
-  font-family: 'Raleway', sans-serif;
+  font-family: $body-font;
 }
 
 .inner-wrapper {
@@ -81,24 +63,40 @@ p {
   margin: 0 auto;
 }
 
-// .nav-bar,
-.footer-text {
-  background: #2A2831; 
-  color: #ffff;
-}
-
 .hidden {
   display: none;
 }
 
-.project-hidden {
-  display: none;
-}
-
-.project-reveal {
+.block {
   display: block;
 }
 
-.visible {
-  display: inline;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0;
+}
+
+.reorder {
+  position: relative;
+  display: inline-block;
+}
+

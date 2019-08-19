@@ -1,13 +1,11 @@
-GSAP ANIMATIONS / FLICKITY
-> Look up events for Flickity
-
-
-Accessibility
+ACCESSIBILITY
 > Add alt text
 > Add bg color to focus
 
+CLEAN-UP
+> Delete unused imported JS files
 
+RESPONSIVE 
+> Finish up all
 
-
-					
 				

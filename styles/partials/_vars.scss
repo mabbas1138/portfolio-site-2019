@@ -1,97 +1,23 @@
 // COLOURS //
 
-$primary-color: #cd5334;
-$secondary-color: #ffffff;
-$tertiary-color: #270F60
-;
-$quaternary-color: #2A2831;
-$quinary-color: #000000;
-$sixth-color: #9400D3;
-
+$black: #000000;
+$white: #ffffff;
+$bgColor: #F5F5F5;
+$color1: #43655A;
 $shadow: #533d4a;
+$gradient: linear-gradient(45deg, #43655A, #608080, #849BA2, #ACB7C0, #D2D5DB, #F5F5F5);
+
 
 // FONTS //
-
-$heading-font: 'Bungee Shade',
-cursive;
-$heading-font2: 'Work Sans',
+$heading-font: 'Fjalla One',
 sans-serif;
-$gen-font: 'Archivo Black',
-sans-serif;
-$body-font: 'Caveat',
+$body-font: 'Raleway', sans-serif;
+$body-font2: 'Caveat',
 cursive;
 
-
-// MIXINS //
-
-@mixin curly-texture {
-    &:before {
-        background-image: url('/assets/braces-2.png');
-        background-size: repeat;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.06;
-    }
-}
-
-@mixin angle-texture {
-    &:before {
-        background-image: url('/assets/angle.png');
-        background-size: repeat;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.05;
-        pointer-events: none;
-    }
-}
-
-@mixin square-texture {
-    &:before {
-        background-image: url('/assets/square.png');
-        background-size: repeat;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.06;
-    }
-}
-
-@mixin paren-texture {
-    &:before {
-        background-image: url('/assets/parentheses.png');
-        background-size: repeat;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.06;
-        z-index: -10000000;
-    }
-}
-
-
-
-//// MEDIA QUERY VARIABLES ///
+// MEDIA QUERY VARIABLES //
 
 @mixin bp ($class) {
-
     @if $class == desktop2 {
         @media (max-width: 2160px) { @content; }
     }
@@ -101,20 +27,18 @@ cursive;
     }
 
     @else if $class == tablet {
-        @media (max-width: 1000px) { @content; }
-    }
-
-    @else if $class == mobile2 {
-        @media(max-width: 999px) { @content; }
+        @media(max-width: 1000px) { @content; }
     }
 
     @else if $class == mobile {
         @media(max-width: 586px) { @content; }
     }
+
+    @else if $class==small-mobile {
+        @media(max-width: 474px) {
+            @content;
+        }
+    }
 }
-
-//// MEDIA QUERY - CHROME ONLY ////
- 
-
 
    

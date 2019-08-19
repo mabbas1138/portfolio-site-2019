@@ -1,119 +1,251 @@
 .projects-section {
   height: 100vh;
   width: 100%;
-}
-
-.carousel {
-  // padding: 1px;
-  height: 100vh;
-  // background: grey;
+  margin: 0 auto;
   position: relative;
-    padding-top: -1px;
-}
+  background: $bgColor;
 
-.portfolio-piece {
-  width: 100%;
-  height: 100%;
-  /* center images in cells with flexbox */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  @include bp (tablet) {
+    height: 100%;
+  }
 
-#planted-site {
-  position: relative;
-  z-index: -1;
- background-image: linear-gradient(to right, #eae6e1, #f5e1b1, #ede182, #d4e552, #a8eb12);
-
-  
-  h2 {
-    color: green;
+  @include bp (mobile) {
+    height: 100%;
   }
 }
 
-#budget-site {
-  background-image: linear-gradient(to bottom, #eae6e1, #abaca5, #6e756f, #364240, #021517);
-}
-
-#giphy-site {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-}
-
-.project-image {
-  width: 500px;
-  // height: 100%;
-  border-radius: 10% 10%;
-  cursor: pointer;
-  position: relative;
-  z-index: 100;
-}
-
-.project-img-link {
-  position: relative;
-  bottom: 150px;
-}
-
-.project-heading{
-  position: relative;
-  bottom: 100px;
-
-  h2 {
-  font-family: 'Fjalla One', cursive;
-  font-size: 3rem;
-  width: 100%;
-  text-transform: uppercase;
+.projects-title {
   text-align: center;
-  margin-top: 0;
-  letter-spacing: 6px;
-  text-shadow: 
-    $shadow 0.25px 0.25px,
-    $shadow 0.5px 0.5px,
-    $shadow 1px 1px,
-    $shadow 2px 2px,
-    $shadow 3px 3px,
-    $shadow 4px 4px,
-    $shadow 5px 5px;
-  } 
-}
-
-.expense-heading {
+  width: 90%;
+  color: $black;
+  font-family: $body-font;
+  text-transform: uppercase;
   position: relative;
   top: 30px;
+  left: 65px;
+
+  @include bp (tablet) {
+    width: 90%;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+
+  @include bp (mobile){
+    position: relative;
+    font-size: 1.5rem;
+    width: 90%;
+    top: 10px;
+    left: -11px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
-.project-text {
+.work-nav {
   position: relative;
-  top: 20px;
-  right: 50px;
-  color: black;
+  top: 10px;
+  margin-bottom: 30px;
+
+  @include bp (mobile) {
+    margin: 0;
+  }
+}
+
+.work-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  text-align: center;
+  padding-left: 0px;
+
+  @include bp(desktop1) {
+    margin-right: 50px;
+  } 
+
+  @include bp(tablet) {
+   margin-right: 50px;
+  }
+
+  @include bp(mobile) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include bp(small-mobile) {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .project-card {
+    height: 268px;
+    width: 50%;
+    position: relative;
+
+    @include bp(tablet) {
+      height: auto;
+      margin: 30px auto 30px auto;
+    }
+
+    @include bp(mobile){
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 30px auto 30px auto;
+    }
+
+    :hover {
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.project-type {
+  margin: 20px 0 20px 0;
+
+    @include bp(mobile) {
+      margin: 10px auto 10px auto;
+    }
+
+    @include bp(small-mobile) {
+      margin: 10px auto 10px -5px;
+    }
 
   p {
-    font-family: 'Fjalla One', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase; 
+    padding: 0 10px;
+    margin: 0 10px;
+
+    @include bp(mobile) {
+      pointer-events: none;
+      font-size: 1rem;
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+
+    @include bp(small-mobile) {
+      font-size: 0.6rem;
+      margin: 0;
+    }
   }
 }
 
-
-
-#budget-text {
-  width: 20%;
-}
-
-  .project-badges {
-    width: 50px;
-    position: absolute;
-    bottom: 100px;
-    left: 170px;
-    display: flex;
-  }
-
-  .badges {
-    margin-right: 10px;
-  }
-
-.github-for-project {
+.modal {
   position: absolute;
-  top: 300px;
-  width: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: $bgColor;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  
+  @include bp(mobile) {
+    position: relative;
+    opacity: 1;
+    top: -10px;
+    height: 100%;
+  }
 }
 
+.modal-content {
+  margin: 0 auto;
+  text-align: center;
+  font-family: $body-font;
+  height: 100%;
+
+  p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color1;
+  }
+
+  p:nth-child(2) {
+    width: 65%;
+  }
+
+  p:nth-child(2),
+  :nth-child(3),
+  :nth-child(4) {
+    font-size: 0.7rem;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  @include bp(mobile) {
+    p {
+      color: black;
+    }
+  }
+}
+
+.project-button {
+  display: inline-block;
+  border: none;
+  padding: 2px 6px  3px 6px;
+  margin-top: 25px;
+  text-decoration: none;
+  border: 2px solid $color1;
+  background: $bgColor;
+  font-family: $body-font;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.2s ease-in-out;
+    background: $color1;
+
+    a {
+      color: $white;
+    }
+  }
+
+  a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
+
+.white-text {
+  color: $white;
+}
+
+.offwhite-bg {
+  background: $bgColor;
+}
+
+.bg-color {
+  color: $bgColor;
+}
+
+.black-bg {
+  background: $black;
+}
+
+.green-bg {
+  background: $color1;
+}
+
+.green-border {
+  border: 1px solid $color1
+}
+
+.hover-effect {
+  pointer-events: none;
+}
