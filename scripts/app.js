@@ -31,17 +31,15 @@ $(document).ready(function(){
 	// Project Caches// 
 	const projectType = $('.project-type');
 	const projectTypeP = $('.project-type p');
-	const allCatLink = $('.all-projects p');
-	const vanCatLink = $('.vanilla-projects p');
-	const reactCatLink = $('.react-projects p');
-	const vueCatLink = $('.vue-projects p');
-	const jQCatLink = $('.jQuery-projects p');
-	const noJSCatLink = $('.noJS-projects p');
-	const vanillaJSType = $('.vanilla-js');
-	const reactType = $('.react');
-	const vueType = $('.vue');
-	const jQueryType = $('.jQuery');
-	const noJSType = $('.noJS');
+	const allCatLink = $('#all-projects p');
+	const vanCatLink = $('#vanilla-projects p');
+	const reactCatLink = $('#react-projects p');
+	const vueCatLink = $('#vue-projects p');
+	const noJSCatLink = $('#noJS-projects p');
+	const vanillaJSType = $('#vanilla-js');
+	const reactType = $('#react');
+	const vueType = $('#vue');
+	const noJSType = $('#noJS');
 	const projectCard = $('.project-card');
 
 
@@ -49,15 +47,15 @@ $(document).ready(function(){
 
 // Smooth scroll //
 
-$('a[href*="#"]').on('click', function (e) {
-	e.preventDefault()
+	$('a[href*="#"]').on('click', function (e) {
+		e.preventDefault()
 
-	$('html, body').animate({
+		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top,
 		},
-		200,
-		'linear'
-	)
+			500,
+			'linear'
+		)
 })
 
 	// Open Nav Menu and fade in bg //
@@ -74,9 +72,9 @@ $('a[href*="#"]').on('click', function (e) {
 			$($navBarUl).addClass('active')
 
 			hamMenuTl
-			.to($navUl, 0.2, {className: "-=hidden"})
-			.to($('.one, .two, .three'), 0.1, {css: {background: 'white'}})
-			.to($($navBar), 0.2, {css: {background: '#43655A'}})
+			.to($navUl, 0.1, {className: "-=hidden"})
+			.to($('.one, .two, .three'), 0.5, {css: {background: 'white'}}, "-=0.5")
+			.to($($navBar), 0.2, {css: {background: '#43655A'}}, {ease: Power0.easeNone})
 			.to($menuLi, 0.1, {autoAlpha: 1})
 			.staggerFromTo($menuLi, 0.2, {x: 130}, {x:0}, {ease:Power1.Linear})
 
@@ -91,7 +89,8 @@ $('a[href*="#"]').on('click', function (e) {
 		}
 	})
 
-// HEADER SECTION //
+	// HEADER SECTION //
+
 	function headShake() {
 		const shakeHead = new TimelineMax();
 		const wiggles = 20;
@@ -116,10 +115,9 @@ $('a[href*="#"]').on('click', function (e) {
 		return headPop;
 	}		
 
-
 // Title animation
 
-TweenLite.set($title, {autoAlpha: 0})
+	TweenLite.set($title, {autoAlpha: 0})
 
 	function revealTitle() {
 		const titleTl = new TimelineLite,
@@ -136,7 +134,7 @@ TweenLite.set($title, {autoAlpha: 0})
 
 // Bio animation
 	
-TweenLite.set($bioText, {perspective: 400, autoAlpha: 0})
+	TweenLite.set($bioText, {perspective: 400, autoAlpha: 0})
 
 	function revealBioText() {
 		const textTl = new TimelineLite,
@@ -175,20 +173,20 @@ TweenLite.set($bioText, {perspective: 400, autoAlpha: 0})
 			.staggerFromTo($contactHeading, 0.2, contactFrom, contactTo, 0.3)
 			.staggerFromTo($contactLink, 0.2, contactFrom, contactTo, 0.3)
 
-			return revealContact;
+		return revealContact;
 	}
 
 
 // HEADER and CONTACT Section Master Timeline
 
-const tlMaster = new TimelineMax();
+	const tlMaster = new TimelineMax();
 
-tlMaster
-	.add(headShake)
-	.add(headPop, '+=1')
-	.add(revealTitle, '+=0.5')
-	.add(revealBioText, '+=0.5')
-	.add(revealContact, '+=0.8')
+	tlMaster
+		.add(headShake)
+		.add(headPop, '+=1')
+		.add(revealTitle, '+=0.5')
+		.add(revealBioText, '+=0.5')
+		.add(revealContact, '+=0.8')
 
 /// SKILLS SECTION ///
 
@@ -233,13 +231,13 @@ tlMaster
 		.staggerFromTo($langPar, 0.3, badgeTxtFrom, badgeTxtTo, 0.2, '-=1')
 
 		.staggerFrom($badgeLib, 0.7, badgeImg, 0.2, '-=0.1')
-		.staggerFromTo($libPar, 0.3, badgeTxtFrom, badgeTxtTo, 0.2, '-=1')
+		.staggerFromTo($libPar, 0.3, badgeTxtFrom, badgeTxtTo, 0.2, '-=1.4')
 
 		.staggerFrom($badgeTool, 0.7, badgeImg, 0.2, '-=0.1')
 		.staggerFromTo($toolsPar, 0.3, badgeTxtFrom, badgeTxtTo, 0.2, '-=1')
 
 		.staggerFrom($badgeLearn, 0.7, badgeImg, 0.2, '-=0.1')
-		.staggerFromTo($learnPar, 0.3, badgeTxtFrom, badgeTxtTo, 0.2, '-=1.5')
+		.staggerFromTo($learnPar, 0.3, badgeTxtFrom, badgeTxtTo, 0.2, '-=1.4')
 
 		const controller = new ScrollMagic.Controller();
 

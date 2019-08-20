@@ -14,11 +14,6 @@ header {
   @include bp(tablet) {
     width: 80%;
   }
-
-  @include bp(mobile) {
-    // position: relative;
-    // top: 10px;
-  }
 }
 
 .headings {
