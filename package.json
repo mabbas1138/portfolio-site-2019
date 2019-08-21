@@ -18,6 +18,7 @@
     "jquery-ui-dist": "^1.12.1",
     "js-yaml": "^3.13.1",
     "jslint": "^0.12.1",
+    "lodash": "^4.17.15",
     "velocity-animate": "^2.0.5"
   },
   "devDependencies": {
