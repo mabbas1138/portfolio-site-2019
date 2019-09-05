@@ -5,41 +5,41 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
   <title>Moe Abbas' Portfolio</title>
+
   <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Fjalla+One|Raleway:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Raleway:400,700" rel="stylesheet">
   <link rel="icon" href="./assets/misc-images/code.png" size="512x512">
   <link href="styles/styles.css" rel="stylesheet">
+
   <script src="/scripts/vendors/modernizr-2.6.2-respond-1.1.0.min.js">
   </script>
 </head>
 
 <body class="inner-wrapper">
   <a class="skip-link" href="#main-content">Skip to main content.</a>
-  <div class="navbar" id="navbar">
-    <div class="bg">
-      <div class="ham-menu">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-      </div>
-    </div>
-    <nav class="nav-ul hidden">
-      <ul class="navbar-ul" id="navbar-ul">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#know-learn-section">Toolbox</a>
-        </li>
-        <li>
-          <a href="#projects">My Work</a>
-        </li>
-      </ul>
-    </nav>
+  <div id="circular-menu-1" class="circular-menu circular-menu-left">
+    <a class="floating-btn">
+    <i class="fa fa-bars"></i>
+    </a>
+    <menu class="items-wrapper">
+      <a href="#home" aria-label="Go to Home Section" class="menu-item fa fa-home" class="visually-hidden"><span
+          class="visually-hidden">Home</span>
+      </a>
+      <a href="#toolbox" aria-label="Go to Toolbox Section" class="menu-item fas fa-tools"><span
+          class="visually-hidden">Toolbox</span>
+      </a>
+      <a href="#my-work" aria-label="Go to 'My Work' Section" class="menu-item fas fa-laptop-code"><span
+          class="visually-hidden">My Work</span>
+      </a>
+    </menu>
   </div>
+
   <header id="home">
+
     <div class="header-content-container">
+    
       <div class="head-image">
         <div class="headings" id="headings">
           <h1 id="name">Moe Abbas</h1>
@@ -47,15 +47,12 @@
           <h2 id="position">Web Developer</h2>
         </div>
         <div class="whole-head">
-          <img class="top-head" id="top-head" src="./assets/misc-images/moe_top.png"
-            alt="top part of cartoon head of developer">
-          <img alt="" class="top-head" id="bottom-head" src="./assets/misc-images/moe_bottom.png"
+          <img class="top-head" id="head-image" src="./assets/misc-images/me-head.png"
             alt="top part of cartoon head of developer">
         </div>
-
       </div>
       <div class="about-me-info">
-        <p id="about-me-text">Toronto-based web developer.<br> Lover of comics and coffee.<br> Dabbler of fitness.<br>
+        <p id="about-me-text">Enthusiast of tech and storytelling.<br> Lover of comics and coffee.<br> Dabbler of fitness.<br>
           Cat Dad.</p>
       </div>
       <div class="contact-container" id="contact-container">
@@ -83,11 +80,14 @@
           </li>
         </ul>
       </div>
+
     </div>
+
   </header>
 
   <main class="inner-wrapper clearfix" id="main">
-    <section class="know-learn-section" id="know-learn-section">
+
+    <section class="know-learn-section" id="toolbox">
       <div class="list" id="languages-list">
         <h1 class="list-heading">Languages</h1>
         <div class="badge-entry">
@@ -101,6 +101,10 @@
         <div class="badge-entry">
           <img src="./assets/program-badges/js-logo.png" class="badges" alt="">
           <p class="badge-name">JavaScript</p>
+        </div>
+        <div class="badge-entry">
+          <img src="./assets/program-badges/typescript-logo.png" class="badges" alt="">
+          <p class="badge-name">TypeScript</p>
         </div>
       </div>
       <div class="list" id="libraries-list">
@@ -127,7 +131,7 @@
         </div>
       </div>
       <div class="list" id="tools-list">
-        <h1 class="list-heading">Tools</h1>
+        <h1 class="list-heading" id="tools-heading">Tools</h1>
         <div class="badge-entry">
           <img src="./assets/program-badges/gsap-badge.svg" class="badges" alt="">
           <p class="badge-name" id="gsap-badge">GSAP</p>
@@ -142,19 +146,16 @@
         </div>
       </div>
       <div class="list" id="learning-list">
-        <h1 class="list-heading" id="learning-header">Current Learning</h1>
+        <h1 class="list-heading">Current Learning</h1>
         <div class="badge-entry">
           <img src="./assets/program-badges/angular-badge.png" class="badges" alt="" id="angular-badge">
           <p class="badge-name">Angular</p>
         </div>
         <div class="badge-entry">
-          <img src="./assets/program-badges/jest-badge.png" class="badges" alt="" id="jest-badge">
-          <p class="badge-name">Jest</p>
+          <img src="./assets/program-badges/dodds-testing-logo.png" class="badges" alt="" id="test-badge">
+          <p class="badge-name">JS Testing</p>
         </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/cypress-badge.png" class="badges" alt="" id="cypress-badge">
-          <p class="badge-name">Cypress</p>
-        </div>
+
         <div class="badge-entry">
           <img src="./assets/program-badges/node-js-badge.png" class="badges" alt="" id="nodejs-badge">
           <p class="badge-name">Node JS</p>
@@ -165,7 +166,7 @@
         </div>
       </div>
     </section>
-    <section class="projects-section" id="projects">
+    <section class="projects-section" id="my-work">
       <div id="animate">
         <h1 class="projects-title">My Work</h1>
         <div class="work-nav filter flex-row">
@@ -173,7 +174,7 @@
             <p>All</p>
           </div>
           <div class="project-type vanilla-projects filter" id="vanilla-projects">
-            <p>VanillaJS</p>
+            <p>Vanilla JS</p>
           </div>
           <div class="project-type vue-projects filter" id="vue-projects">
             <p>Vue</p>
@@ -218,7 +219,7 @@
                   <p>Webpack using custom configuration.</p>
                   <button class="project-button">
                     <a href="https://mabbas.codes/vue-store/" aria-hidden
-                      aria-label="Go to Moe's Live Site for Vue Store App" target="_blank">Live (coming soon)</a>
+                      aria-label="Go to Moe's Live Site for Vue Store App" target="_blank">Live</a>
                   </button>
                   <button class="project-button">
                     <a href="https://github.com/mabbas1138/vue-store" aria-hidden
@@ -297,15 +298,6 @@
   </script>
   <script src="scripts/plugins/ScrollToPlugin.min.js">
   </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.velocity.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
 
   <script src="./scripts/app.js"></script>
 

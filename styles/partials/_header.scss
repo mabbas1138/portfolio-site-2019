@@ -1,13 +1,10 @@
 header {
-  width: 100%;
   background: $gradient;
+  width: 100%;
 }
 
 .header-content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column;
   margin: 0 auto;
   width: 50%;
   
@@ -17,12 +14,9 @@ header {
 }
 
 .headings {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-column;
   position: relative;
+  width: 100%;
   z-index: 300;
 
   @include bp(tablet) {
@@ -30,13 +24,15 @@ header {
   }
 
   h1 {
-    text-align: center;
+    color: $black;
     font-family: $body-font2;
     font-size: 1.3rem;
     font-weight: bold;
-    width: 100%;
-    color: $black;
     letter-spacing: 5px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 100%;
 
     @include bp(mobile) {
       font-size: 1rem;
@@ -44,18 +40,18 @@ header {
   }
 
   h2 {
-    font-family: $heading-font;
-    font-size: 1.5rem;
-    width: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 0;
     color: $white;
+    font-family: $body-font;
+    font-size: 1.5rem;
     letter-spacing: 5px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
     text-shadow: $shadow 1px 1px,
       $shadow 2px 2px,
       $shadow 3px 3px,
       $shadow 4px 4px;
+      width: 100%;
 
       @include bp(tablet) {
         font-size: 1.3rem;
@@ -91,10 +87,9 @@ header {
       margin: 0 auto;
     }
 
-    #top-head,
-    #bottom-head {
-      width: 200px;
-      margin: 0 auto;
+    #head-image {
+      margin: 8px auto auto auto;
+      width: 190px;
     }
 
     #top-head {
@@ -109,22 +104,26 @@ header {
   }
   
   .about-me-info {
+    margin: 0 auto 0 auto;
     text-align: center;
     width: 80%;
-    margin: 0 auto 0 auto;
 
     @include bp(tablet) {
       width: 100%;
     }
 
     p {
-      font-size: 1.5rem;
-      font-family: $body-font2;
       color: $black;
+      font-family: $body-font2;
+      font-size: 1.5rem;
       font-weight: 50;
 
       @include bp(mobile) {
         font-size: 1.2rem;
+      }
+
+      @include bp(small-mobile) {
+        font-size: 1rem;
       }
     }
   }

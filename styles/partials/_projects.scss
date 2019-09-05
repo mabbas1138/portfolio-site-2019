@@ -1,9 +1,9 @@
 .projects-section {
+  background: $bgColor;
   height: 100vh;
-  width: 100%;
   margin: 0 auto;
   position: relative;
-  background: $bgColor;
+  width: 100%;
 
   @include bp (tablet) {
     height: 100%;
@@ -15,58 +15,68 @@
 }
 
 .projects-title {
-  text-align: center;
-  width: 90%;
-  color: $black;
+  color: $darkGreen;
   font-family: $body-font;
-  text-transform: uppercase;
   position: relative;
+  text-align: center;
+  text-transform: uppercase;
   top: 30px;
   left: 65px;
+  width: 90%;
 
   @include bp (tablet) {
-    width: 90%;
     top: 10px;
     left: 10px;
-    text-align: center;
     margin: 10px auto 0 auto;
+    text-align: center;
+    width: 90%;
   }
 
   @include bp (mobile){
-    position: relative;
     font-size: 1.5rem;
-    width: 90%;
+    margin: 0 auto;
+    position: relative;
     top: 10px;
     left: -11px;
-    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  @include bp(small-mobile) {
+    left: -1px;
+    padding-top: 20px;
     text-align: center;
   }
 }
 
 .work-nav {
+  margin-bottom: 30px;
   position: relative;
   top: 10px;
-  margin-bottom: 30px;
 
   @include bp (mobile) {
     margin: 0;
   }
+    
+  @include bp(small-mobile) {
+	  margin-left: 20px;
+	}
 }
 
 .work-container {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 .project-list {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
-  width: 100%;
   margin: 0 auto 0 auto;
-  align-items: center;
-  text-align: center;
+  overflow: hidden;
   padding-left: 0px;
+  text-align: center;
+  width: 100%;
 
   @include bp(desktop1) {
     margin-right: 50px;
@@ -83,13 +93,12 @@
 
   @include bp(small-mobile) {
     display: block;
-    margin-right: 50px;
   }
 
   .project-card {
     height: 268px;
-    width: 50%;
     position: relative;
+    width: 50%;
 
     @include bp(tablet) {
       height: auto;
@@ -98,9 +107,9 @@
 
     @include bp(mobile){
       display: block;
-      width: 80%;
       height: auto;
       margin: 30px auto 30px auto;
+      width: 80%;
     }
 
     :hover {
@@ -111,6 +120,7 @@
 }
 
 .project-type {
+  color: $darkGreen;
   margin: 20px 0 20px 0;
 
     @include bp(mobile) {
@@ -123,15 +133,15 @@
 
   p {
     cursor: pointer;
-    text-transform: uppercase; 
-    padding: 0 10px;
     margin: 0 10px;
+    padding: 0 10px;
+    text-transform: uppercase; 
 
     @include bp(mobile) {
-      pointer-events: none;
       font-size: 1rem;
-      padding: 0 auto;
       margin: 0 auto;
+      padding: 0 auto;
+      pointer-events: none;
     }
 
     @include bp(small-mobile) {
@@ -142,34 +152,34 @@
 }
 
 .modal {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
   background: $bgColor;
+  bottom: 0;
+  height: 100%;
+  left: 0;
   opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   transition: opacity 0.2s ease;
   
   @include bp(mobile) {
-    position: relative;
-    opacity: 1;
-    top: -10px;
     height: 100%;
+    opacity: 1;
+    position: relative;
+    top: -10px;
   }
 }
 
 .modal-content {
-  margin: 0 auto;
-  text-align: center;
   font-family: $body-font;
   height: 100%;
+  margin: 0 auto;
+  text-align: center;
 
   p:first-child {
+    color: $darkGreen;
     font-size: 1.5rem;
     font-weight: bold;
-    color: $color1;
   }
 
   p:nth-child(2) {
@@ -180,8 +190,8 @@
   :nth-child(3),
   :nth-child(4) {
     font-size: 0.7rem;
-    padding: 5px;
     margin: 0 auto;
+    padding: 5px;
   }
 
   @include bp(mobile) {
@@ -192,23 +202,23 @@
 }
 
 .project-button {
-  display: inline-block;
-  border: none;
-  padding: 2px 6px  3px 6px;
-  margin-top: 25px;
-  text-decoration: none;
-  border: 2px solid $color1;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   background: $bgColor;
+  border: 2px solid $darkGreen;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
   font-family: $body-font;
   font-size: 1rem;
+  margin-top: 25px;
+  padding: 2px 6px  3px 6px;
   text-align: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
+    background: $darkGreen;
     transition: 0.2s ease-in-out;
-    background: $color1;
 
     a {
       color: $white;
@@ -217,8 +227,8 @@
 
   a {
     color: black;
-    text-transform: uppercase;
     font-size: 0.8rem;
+    text-transform: uppercase;
   }
 }
 
@@ -239,11 +249,11 @@
 }
 
 .green-bg {
-  background: $color1;
+  background: $darkGreen;
 }
 
 .green-border {
-  border: 1px solid $color1
+  border: 1px solid $darkGreen
 }
 
 .hover-effect {
