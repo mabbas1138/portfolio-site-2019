@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
 	// Header Caches //
 	const $wholeHead = $('.whole-head')
@@ -28,97 +28,131 @@ $(document).ready(function(){
 	const projectCard = $('.project-card');
 
 
-
-///////// NAVBAR SECTION ///////////
-
-// Smooth scroll //
+	///////// NAVBAR SECTION ///////////
+	// Smooth scroll //
 
 	$('a[href*="#"]').on('click', function (e) {
 		e.preventDefault()
 
 		$('html, body').animate({
-			scrollTop: $($(this).attr('href')).offset().top,
-		},
+				scrollTop: $($(this).attr('href')).offset().top,
+			},
 			500,
 			'linear'
 		)
-})
+	})
 
 	// Open Nav Menu and fade in bg //
 
 	$($floatingBtn).on('click', function (e) {
 		e.preventDefault();
-
 		$($circMenu).toggleClass('active')
 	})
 
 
 	//////// HERO SECTION /////////
 
-	// Head shake to open and reveal headings //
+	// Slide in head with elastic landing 
 
 	function slideInHead() {
 		const headSlide = new TimelineMax();
 
-		TweenLite.set($wholeHead, {x: -850})
-
 		headSlide
-			.to($wholeHead, 1, {x: 0, ease:Elastic.easeOut.config(1, 0.5)})
+			.from($wholeHead, 1, {
+				x: -850,
+				autoAlpha: 0,
+				ease: Elastic.easeOut.config(1, 0.5)
+			})
 
 		return headSlide;
-	}		
-	
-	// Title animation
+	}
 
-	TweenLite.set($title, {autoAlpha: 0})
+	// Job title animation
+
+	TweenLite.set($title, {
+		autoAlpha: 0
+	})
 
 	function revealTitle() {
 		const titleTl = new TimelineLite,
-					liftTitle = new SplitText($title, {type: "chars", opacity: 0}),
-					chars = liftTitle.chars;
-		
-		TweenLite.set($title, {autoAlpha: 1})
+			liftTitle = new SplitText($title, {
+				type: "chars",
+				opacity: 0
+			}),
+			chars = liftTitle.chars;
+
+		TweenLite.set($title, {
+			autoAlpha: 1
+		})
 
 		titleTl
-			.staggerFromTo(chars, 0.5, {y: 50, scale: 0},{autoAlpha: 1, scale:1, y: 0, ease:Back.easeOut}, 0.01)
+			.staggerFromTo(chars, 0.5, {
+				y: 50,
+				scale: 0
+			}, {
+				autoAlpha: 1,
+				scale: 1,
+				y: 0,
+				ease: Back.easeOut
+			}, 0.01)
 
 		return revealTitle;
 	}
 
 	// Bio text animation
-	
-	TweenLite.set($bioText, {perspective: 400, autoAlpha: 0})
+
+	TweenLite.set($bioText, {
+		perspective: 400,
+		autoAlpha: 0
+	})
 
 	function revealBioText() {
 		const textTl = new TimelineLite,
-					splitBioText = new SplitText('#about-me-text', {type: "chars", opacity: 0}),
-					chars = splitBioText.chars;
-		
-		TweenLite.set($bioText, {perspective: 400, autoAlpha: 1})
+			splitBioText = new SplitText('#about-me-text', {
+				type: "chars",
+				opacity: 0
+			}),
+			chars = splitBioText.chars;
+
+		TweenLite.set($bioText, {
+			perspective: 400,
+			autoAlpha: 1
+		})
 
 		textTl
-			.staggerFrom(chars, 0.8, {opacity: 0, scale:0, y: 80, rotationX: 180, transformOrigin: '0% 50% -50', ease:Back.easeOut}, 0.01, "+=0")
+			.staggerFrom(chars, 0.8, {
+				autoAlpha: 0,
+				scale: 0,
+				y: 80,
+				rotationX: 180,
+				transformOrigin: '0% 50% -50',
+				ease: Back.easeOut
+			}, 0.01, "+=0")
 
 		return revealBioText;
-}
+	}
 
 
-///////// CONTACT SECTION /////////
+	///////// CONTACT SECTION /////////
 
 	const contactFrom = {
 		scale: 0,
-		opacity: 0,
+		autoAlpha: 0,
 	}
 
 	const contactTo = {
 		scale: 1,
-		opacity: 1,
+		autoAlpha: 1,
 		delay: 0.2,
 		ease: Power1.easeOut
 	}
 
-	TweenLite.set($contactHeading, {opacity: 0})
-	TweenLite.set($contactLink, {opacity: 0})
+	TweenLite.set($contactHeading, {
+		autoAlpha: 0
+	})
+	TweenLite.set($contactLink, {
+		autoAlpha: 0
+	})
 
 	// Stagger-reveal contact icons
 
@@ -133,35 +167,43 @@ $(document).ready(function(){
 	}
 
 
-// HEADER and CONTACT Section Master Timeline
+	// HEADER and CONTACT Section Master Timeline
 
-	const tlMaster = new TimelineMax();
+	$(window).on("load", function () {
 
-	tlMaster
-		.add(slideInHead)
-		// .add(headPop, '+=1')
-		.add(revealTitle, '+=0.5')
-		.add(revealBioText, '+=0.5')
-		.add(revealContact, '+=0.8')
+		const tlMaster = new TimelineMax();
 
+		tlMaster
+			.add(slideInHead)
+			.add(revealTitle, '+=0.5')
+			.add(revealBioText, '+=0.5')
+			.add(revealContact, '+=0.8')
 
-///////// 'MY WORK' NAV BAR /////////
+	})
 
-// Highlight 'All' tab by default
+	///////// 'MY WORK' NAV BAR /////////
+
+	// Highlight 'All' tab by default
 
 	const workTl = new TimelineMax()
 
-	workTl.to($(allCatLink), 0.2, {className: '+=green-bg white-text'})
+	workTl.to($(allCatLink), 0.2, {
+		className: '+=green-bg white-text'
+	})
 
 
-// Shift background color to selected project type in navbar
+	// Shift background color to selected project type in navbar
 
 	function moveBgAndWhite(category) {
 		const tl = new TimelineMax()
 
-		TweenMax.set($(projectTypeP).not(category), {className: '-=green-bg white-text'})
+		TweenMax.set($(projectTypeP).not(category), {
+			className: '-=green-bg white-text'
+		})
 
-		tl.to(category, 0.2,  {className: '+=green-bg white-text'})
+		tl.to(category, 0.2, {
+			className: '+=green-bg white-text'
+		})
 	}
 
 	// Highlight selected project type on click, and shift highlight to another project that's clicked on
@@ -172,20 +214,29 @@ $(document).ready(function(){
 
 		type === projectCard ? (
 
-		unhideTl
-			.to($(type), 0.1, {className: '-=hover-effect', opacity: 1})
+			unhideTl
+			.to($(type), 0.1, {
+				className: '-=hover-effect',
+				opacity: 1
+			})
 
 		) : (
 
-		unhideTl
-			.to($(type), 0.1, {className: '-=hover-effect', opacity: 1}),
+			unhideTl
+			.to($(type), 0.1, {
+				className: '-=hover-effect',
+				opacity: 1
+			}),
 
-		showTl
-			.to($(projectCard).not(type), 0.3, {className: '+=hover-effect', opacity: 0.1})
+			showTl
+			.to($(projectCard).not(type), 0.3, {
+				className: '+=hover-effect',
+				opacity: 0.1
+			})
 		)
 	}
 
-	$(projectType).on('click', function(e){
+	$(projectType).on('click', function (e) {
 		e.preventDefault();
 
 		if ($(this).hasClass('all-projects')) {
