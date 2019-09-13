@@ -1,18 +1,24 @@
 // COLOURS //
-$bgColor: #F5F5F5;
+$bgColor: #f5f5f5;
 $black: #000000;
-$darkGreen: #43655A;
-$gradient: linear-gradient(45deg, #43655A, #608080, #849BA2, #ACB7C0, #D2D5DB, #F5F5F5);
-$red: #FF0000;
+$darkGreen: #43655a;
+$gradient: linear-gradient(
+  45deg,
+  #43655a,
+  #608080,
+  #849ba2,
+  #acb7c0,
+  #d2d5db,
+  #f5f5f5
+);
+$red: #ff0000;
 $shadow: #533d4a;
-$weldonBlue: #849BA2;
+$weldonBlue: #849ba2;
 $white: #ffffff;
-
 
 // FONTS //
 $body-font: 'Raleway', sans-serif;
-$body-font2: 'Caveat',
-cursive;
+$body-font2: 'Caveat', cursive;
 
 // STYLE MIXINS //
 
@@ -23,30 +29,27 @@ cursive;
   justify-content: center;
 }
 
-
 // MEDIA QUERY MIXINS //
-@mixin bp ($class) {
-    @if $class == desktop2 {
-        @media (max-width: 2160px) { @content; }
+@mixin bp($class) {
+  @if $class == desktop2 {
+    @media (max-width: 2160px) {
+      @content;
     }
-
-    @else if $class == desktop1 {
-        @media (max-width: 1312px) { @content; }
+  } @else if $class == desktop1 {
+    @media (max-width: 1312px) {
+      @content;
     }
-
-    @else if $class == tablet {
-        @media(max-width: 1000px) { @content; }
+  } @else if $class == tablet {
+    @media (max-width: 1000px) {
+      @content;
     }
-
-    @else if $class == mobile {
-        @media(max-width: 586px) { @content; }
+  } @else if $class == mobile {
+    @media (max-width: 586px) {
+      @content;
     }
-
-    @else if $class == small-mobile {
-        @media(max-width: 474px) {
-            @content;
-        }
+  } @else if $class == small-mobile {
+    @media (max-width: 474px) {
+      @content;
     }
+  }
 }
-
-   

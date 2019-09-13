@@ -170,7 +170,6 @@ $(document).ready(function () {
 	// HEADER and CONTACT Section Master Timeline
 
 	$(window).on("load", function () {
-
 		const tlMaster = new TimelineMax();
 
 		tlMaster
@@ -178,7 +177,6 @@ $(document).ready(function () {
 			.add(revealTitle, '+=0.5')
 			.add(revealBioText, '+=0.5')
 			.add(revealContact, '+=0.8')
-
 	})
 
 	///////// 'MY WORK' NAV BAR /////////
