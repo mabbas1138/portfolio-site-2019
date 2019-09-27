@@ -1,4 +1,4 @@
-// COLOURS //
+/* Colours */
 $color1: #293F14;
 $color2:#BF1363;
 $color3: #0C6492;
@@ -12,12 +12,12 @@ $black: #000000;
 $white: #ffffff;
 $ghostwhite: 	#f8f8ff;
 
-// FONTS //
+/* Fonts */
 $body-font: 'Oswald', sans-serif;
 $body-font2: 'Montserrat', sans-serif;
 
 
-/// Base style media queries //
+/* Base style media queries */
 
 @media screen and (max-width: 744px) {
 	.section-content,
@@ -34,7 +34,7 @@ $body-font2: 'Montserrat', sans-serif;
 	}
 }
 
-// Mobile queries //
+/* Mobile queries */
 @mixin bp($class) {
   @if $class == mobile {
     @media (max-width: 586px) {

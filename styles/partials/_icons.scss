@@ -35,13 +35,12 @@
 #skills-list {
   float: left;
   width: 50%;
-  
+
   @include bp(mobile) {
     display: block;
     clear: both;
     width: 100%;
   }
-
 }
 
 .badge-entry {
@@ -154,70 +153,6 @@
   flex-direction: column;
   float: right;
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
 }
-
-
-// .icon {
-// 	font-style: normal;
-// 	font-weight: normal;
-// 	font-variant: normal;
-// 	text-transform: none;
-// 	line-height: 1;
-// 	cursor: pointer;
-// 	-webkit-font-smoothing: antialiased;
-// }
-
-// .icon:before {
-// 	display: block;
-// 	font-size: 2em;
-// 	margin-bottom: 10px;
-// }
-
-// .about-icon:before {
-// 	content: "\e000";
-// }
-
-// .projects-icon:before {
-// 	content: "\e001";
-// }
-
-// .skills-icon:before {
-// 	content: "\e002";
-// }
-
-// .contact-icon:before {
-// 	content: "\e003";
-// }
-
-// .close-icon {
-// 	position: absolute;
-// 	top: 20px;
-// 	right: 20px;
-// 	cursor: pointer;
-// 	z-index: 100;
-// 	opacity: 0;
-// 	pointer-events: none;
-// }
-
-// .close-icon:before {
-// 	content: "\e005";
-// }
-
-// .know-learn-section {
-//   align-items: top;
-//   background: $white;
-//   // display: flex;
-//   height: 60vh;
-//   // flex-direction: row;
-//   // justify-content: space-around;
-//   // margin-top: 8px;
-//   // padding-top: 1px;
-//   width: 100%;
-
-// }
-
-// .skills-section .bl-content {
-//   margin-top: 20px;
-// }
