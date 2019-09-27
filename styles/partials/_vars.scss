@@ -17,37 +17,7 @@ $body-font: 'Oswald', sans-serif;
 $body-font2: 'Montserrat', sans-serif;
 
 
-// MEDIA QUERIES //
-@mixin bp($class) {
-  @if $class == desktop2 {
-    @media (max-width: 2160px) {
-      @content;
-    }
-  } @else if $class == desktop1 {
-    @media (max-width: 1312px) {
-      @content;
-    }
-  } @else if $class == tablet {
-    @media (max-width: 1000px) {
-      @content;
-		}
-	} @else if $class == sm-tablet {
-		@media (max-width: 744px) {
-			@content;
-		}
-  } @else if $class == mobile {
-    @media (max-width: 586px) {
-      @content;
-    }
-  } @else if $class == sm-mobile {
-    @media (max-width: 474px) {
-      @content;
-    }
-  }
-}
-
-
-/// Base style queries //
+/// Base style media queries //
 
 @media screen and (max-width: 744px) {
 	.section-content,
@@ -64,3 +34,15 @@ $body-font2: 'Montserrat', sans-serif;
 	}
 }
 
+// Mobile queries //
+@mixin bp($class) {
+  @if $class == mobile {
+    @media (max-width: 586px) {
+      @content;
+    }
+  } @else if $class == sm-mobile {
+    @media (max-width: 474px) {
+      @content;
+    }
+  }
+}

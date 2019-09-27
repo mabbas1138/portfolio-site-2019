@@ -1,0 +1,70 @@
+
+.bl-main > section:first-child {
+	top: 0;
+	left: 0;
+	background: $color1;
+}
+
+.bl-main > section:nth-child(2) {
+	top: 0;
+	left: 50%;
+	background: $color2;
+}
+
+.bl-main > section:nth-child(3) {
+	top: 50%;
+	left: 0;
+	background: $color3;
+}
+
+.bl-main > section:nth-child(4) {
+	top: 50%;
+	left: 50%;
+	background: $color4;
+}
+
+.img {
+	position: absolute;
+}
+
+.beard-img {
+	top: 10px;
+	width: 180px;
+
+		@include bp(sm-mobile) {
+			top: 15px;
+			width: 160px;
+	}
+}
+
+.port-code-img {
+	top: 40px;
+	width: 120px;
+
+		@include bp(sm-mobile) {
+			top: 40px;
+			width: 110px;
+	}
+}
+
+.skills-img {
+	top: 5px;
+	width: 150px;
+
+		@include bp(sm-mobile) {
+			top: 25px;
+			width: 110px;
+	}
+}
+
+.blog-img {
+	top: 20px;
+	width: 120px;
+
+	@include bp(sm-mobile) {
+		top: 30px;
+		width: 100px;
+	}
+}
+
+
