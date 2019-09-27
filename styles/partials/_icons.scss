@@ -1,0 +1,223 @@
+.list {
+  max-width: 1350px;
+  margin-top: 50px;
+}
+
+.list-grid {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+#learning-container {
+  width: 50%;
+  float: right;
+  margin-top: 50px;
+
+  .learning-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-heading {
+    margin-bottom: -11px;
+  }
+
+  @include bp(mobile) {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+}
+
+#skills-list {
+  float: left;
+  width: 50%;
+  
+  @include bp(mobile) {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+
+}
+
+.badge-entry {
+  flex: 1;
+  width: 50%;
+  text-align: center;
+  height: 120px;
+  flex-basis: 20%;
+  width: 200px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 5px;
+  line-height: 2;
+}
+
+.badges {
+  width: 70px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.bl-content .badge-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+  font-family: $body-font2;
+  color: $ghostwhite;
+  font-weight: 300;
+  display: block;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.bl-content .learning-list p {
+  font-size: 1rem;
+  line-height: 1;
+  padding: 10px;
+  margin: 0;
+}
+
+.bl-content .learning-list p:not(.end-text) {
+  font-family: $body-font2;
+}
+
+.badges #vue-icon {
+  width: 90px;
+}
+
+#firebase-icon {
+  width: 55px;
+}
+
+#react-redux-icon {
+  width: 60px;
+}
+
+.list-heading,
+.know-heading {
+  color: $ghostwhite;
+  font-family: $body-font;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.list-heading:nth-child(3) {
+  padding-top: 30px;
+  position: relative;
+}
+
+// 'Front-End' & 'Back-End' text
+.bl-content .learning-list .end-text {
+  color: $ghostwhite;
+  font-size: 1.2rem;
+  font-family: $body-font2;
+  font-weight: bold;
+}
+
+.bl-content h2 {
+  position: relative;
+}
+
+/* horizontal line */
+.bl-content h2::before {
+  content: '';
+  position: absolute;
+  background-color: $ghostwhite;
+  width: 50px;
+  height: 3px;
+  top: 0;
+  left: 0;
+}
+
+/* vertical line */
+.bl-content h2::after {
+  content: '';
+  position: absolute;
+  background-color: $ghostwhite;
+  width: 80px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-methods {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+
+// .icon {
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	font-variant: normal;
+// 	text-transform: none;
+// 	line-height: 1;
+// 	cursor: pointer;
+// 	-webkit-font-smoothing: antialiased;
+// }
+
+// .icon:before {
+// 	display: block;
+// 	font-size: 2em;
+// 	margin-bottom: 10px;
+// }
+
+// .about-icon:before {
+// 	content: "\e000";
+// }
+
+// .projects-icon:before {
+// 	content: "\e001";
+// }
+
+// .skills-icon:before {
+// 	content: "\e002";
+// }
+
+// .contact-icon:before {
+// 	content: "\e003";
+// }
+
+// .close-icon {
+// 	position: absolute;
+// 	top: 20px;
+// 	right: 20px;
+// 	cursor: pointer;
+// 	z-index: 100;
+// 	opacity: 0;
+// 	pointer-events: none;
+// }
+
+// .close-icon:before {
+// 	content: "\e005";
+// }
+
+// .know-learn-section {
+//   align-items: top;
+//   background: $white;
+//   // display: flex;
+//   height: 60vh;
+//   // flex-direction: row;
+//   // justify-content: space-around;
+//   // margin-top: 8px;
+//   // padding-top: 1px;
+//   width: 100%;
+
+// }
+
+// .skills-section .bl-content {
+//   margin-top: 20px;
+// }

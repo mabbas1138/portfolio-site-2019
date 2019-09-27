@@ -1,35 +1,23 @@
 // COLOURS //
-$bgColor: #f5f5f5;
+$color1: #293F14;
+$color2:#BF1363;
+$color3: #0C6492;
+$color4: #15151D;
+$color1light: #4F613E;
+$color2light: #CA3D7F;
+$color3light: #0E79B2;
+$color4light: #191923;
+
 $black: #000000;
-$darkGreen: #43655a;
-$gradient: linear-gradient(
-  45deg,
-  #43655a,
-  #608080,
-  #849ba2,
-  #acb7c0,
-  #d2d5db,
-  #f5f5f5
-);
-$red: #ff0000;
-$shadow: #533d4a;
-$weldonBlue: #849ba2;
 $white: #ffffff;
+$ghostwhite: 	#f8f8ff;
 
 // FONTS //
-$body-font: 'Raleway', sans-serif;
-$body-font2: 'Caveat', cursive;
+$body-font: 'Oswald', sans-serif;
+$body-font2: 'Montserrat', sans-serif;
 
-// STYLE MIXINS //
 
-@mixin flex-column {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-// MEDIA QUERY MIXINS //
+// MEDIA QUERIES //
 @mixin bp($class) {
   @if $class == desktop2 {
     @media (max-width: 2160px) {
@@ -42,14 +30,37 @@ $body-font2: 'Caveat', cursive;
   } @else if $class == tablet {
     @media (max-width: 1000px) {
       @content;
-    }
+		}
+	} @else if $class == sm-tablet {
+		@media (max-width: 744px) {
+			@content;
+		}
   } @else if $class == mobile {
     @media (max-width: 586px) {
       @content;
     }
-  } @else if $class == small-mobile {
+  } @else if $class == sm-mobile {
     @media (max-width: 474px) {
       @content;
     }
   }
 }
+
+
+/// Base style queries //
+
+@media screen and (max-width: 744px) {
+	.section-content,
+	.colored-box {
+		font-size: 75%;
+	}
+
+	.bl-expand .colored-box {
+		height: 130px;
+	}
+
+	.section-content > ul li {
+		width: 40%;
+	}
+}
+

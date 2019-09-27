@@ -1,0 +1,45 @@
+.contact-container {
+  display: block;
+}
+
+.contact-icon {
+  width: 100px;
+  margin: 0 auto;
+}
+
+#github-icon {
+  width: 100px;
+}
+
+#twitter-icon {
+  border-radius: 10%;
+}
+
+.bl-main .contact-link a {
+  padding: 0;
+  :hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.2s ease;
+  }
+}
+
+.contact-heading {
+  text-align: center;
+}
+
+.bl-content .contact-methods {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 5%;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+
+	li {
+    cursor: pointer;
+    padding: 0 10px;
+  }
+}

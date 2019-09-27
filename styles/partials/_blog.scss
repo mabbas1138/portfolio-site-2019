@@ -1,0 +1,18 @@
+.devart-par a {
+  padding-left: 0;
+}
+
+.gr-wave {
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

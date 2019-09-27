@@ -2,309 +2,251 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-  <title>Moe Abbas' Portfolio</title>
-
-  <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Raleway:400,700" rel="stylesheet">
-  <link rel="icon" href="./assets/misc-images/code.png" size="512x512">
-  <link href="styles/styles.css" rel="stylesheet">
-
-  <!-- <script src="/scripts/vendors/modernizr-2.6.2-respond-1.1.0.min.js">
-  </script> -->
+	<title>Moe Abbas' Portfolio</title>
+	<script src="https://kit.fontawesome.com/ac7226e2b6.js" crossorigin="anonymous"></script>
+	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Oswald:700&display=swap" rel="stylesheet">
+	<link rel="icon" href="./assets/misc-images/code.png" size="512x512">
+	<link href="styles/styles.css" rel="stylesheet">
+	<script src="/scripts/vendors/modernizr-2.6.2-respond-1.1.0.min.js">
+	</script>
 </head>
 
-<body class="inner-wrapper">
-  <a class="skip-link" href="#main-content">Skip to main content.</a>
-  <div id="circular-menu-1" class="circular-menu circular-menu-left">
-    <a class="floating-btn">
-      <i class="fa fa-bars"></i>
-    </a>
-    <menu class="items-wrapper">
-      <a href="#home" aria-label="Go to Home Section" class="menu-item fa fa-home" class="visually-hidden"><span
-          class="visually-hidden">Home</span>
-      </a>
-      <a href="#toolbox" aria-label="Go to Toolbox Section" class="menu-item fas fa-tools"><span
-          class="visually-hidden">Toolbox</span>
-      </a>
-      <a href="#my-work" aria-label="Go to 'My Work' Section" class="menu-item fas fa-laptop-code"><span
-          class="visually-hidden">My Work</span>
-      </a>
-    </menu>
-  </div>
+<body class="clearfix">
+	<a class="skip-link" href="#main-content">Skip to main content.</a>
+	<div class="container">
+		<div id="bl-main" class="bl-main">
+			<section>
+				<div class="bl-box">
+					<img src="./assets/misc-images/beard.png" class="img beard-img" alt="Bearded man icon for About Me section">
+					<h2 class="">About Me</h2>
+				</div>
+				<div class="bl-content">
+					<h2>Who I Am</h2>
+					<!-- <img src="./assets/misc-images/me-circle-big.jpeg" alt="Photo of Moe" class="dev-photo"> -->
+					<p>Hey there, I'm Moe Abbas! I'm a filmmaker-turned-web developer because nothing beats making stuff on
+						the most important screen in the world. I love using libraries like React and Vue.js with animation to
+						create awesome user experiences, whether they're convenient tools to streamline tasks, or small games
+						designed to make your bus ride feel a little shorter.
+					</p>
+					<h1 class="contact-heading">Contact</h1>
+					<ul class="contact-methods" id="contact-methods">
+						<li class="contact-link clearfix">
+							<a aria-label="Contact Moe Via Email" href="mailto:mabbas@mabbas.codes" target="_blank"><img
+									alt="Email Icon" aria-hidden class="contact-icon" id="email-icon"
+									src="assets/misc-images/email-icon.svg"><span class="visually-hidden">Email</span></a>
 
-  <header id="home">
+						</li>
+						<li class="contact-link">
+							<a aria-label="Go to Moe's LinkedIn Page" href="https://www.linkedin.com/in/moe-m-abbas"
+								target="_blank"><img alt="LinkedIn Icon" aria-hidden class="contact-icon" id="linkedin-icon"
+									src="assets/misc-images/linkedin-logo.png"><span class="visually-hidden">LinkedIn</span></a>
+						</li>
+						<li class="contact-link">
+							<a aria-label="Go to Moe's GitHub Page" href="https://www.github.com/mabbas1138" target="_blank"><img
+									alt="GitHub Icon" aria-hidden class="contact-icon" id="github-icon"
+									src="assets/program-badges/github-white.png"><span class="visually-hidden">GitHub</span></a>
+						</li>
+						<li class="contact-link">
+							<a aria-label="Go to Moe's Twitter feed" href="https://twitter.com/mmabbstar" target="_blank"><img
+									alt="Twitter Icon" aria-hidden class="contact-icon" id="twitter-icon"
+									src="./assets/misc-images/twitter-blue.png"><span class="visually-hidden">Twitter</span></a>
+						</li>
+					</ul>
+				</div>
+				<span class="bl-icon-close far fa-times-circle fa-3x"></span>
+			</section>
+			<section id="bl-work-section">
+				<div class="bl-box">
+					<img src="./assets/misc-images/portfolio-code.png" class="img port-code-img" alt="Web code icon for portfolio section">
+					<h2 class="works">Projects</h2>
+				</div>
+				<div class="bl-content">
+					<h2>What I've Made</h2>
+					<p>Here's a selection of projects I've made at HackerYou and on my own. I'll be adding more in the near
+						future, particularly story- and game-based full-stack projects!</p>
+					<ul class="project-list">
+						<li class="project-card" id="vanilla-js">
+							<img src="/assets/misc-images/budget-tracker.png" alt="">
+							<div class="modal">
+								<div class="modal-content">
+									<h1>Budget Tracker</h1>
+									<p>Input, view income & expenses.</p>
+									<p>Vanilla JS, plain CSS.</p>
+									<button class="project-button">
+										<a href="https://mabbas.codes/budget-app/" aria-hidden
+											aria-label="Go to Moe's Live Site for Budget Tracker App" target="_blank">Live</a>
+									</button>
+									<button class="project-button">
+										<a href="https://github.com/mabbas1138/vanillajs-budget-tracker" aria-hidden
+											aria-label="Go to Moe's GitHub Repo for Budget Tracker App" target="_blank">GitHub</a>
+									</button>
+								</div>
+							</div>
+						</li>
+						<!-- <li class="project-card" id="vue">
+							<img src="/assets/misc-images/vue-store.png" alt="" id="expense-img">
+							<div class="modal">
+								<div class="modal-content">
+									<h1>A Boutique of Oddities</h1>
+									<p>Mock online store.</p>
+									<p>Vue.js, Vuex, Router, Sass, Webpack.</p>
+									<button class="project-button">
+										<a href="https://mabbas.codes/vue-store/" aria-hidden
+											aria-label="Go to Moe's Live Site for Vue Store App" target="_blank">Live</a>
+									</button>
+									<button class="project-button">
+										<a href="https://github.com/mabbas1138/vue-store" aria-hidden
+											aria-label="Go to Moe's GitHub Repo for Vue Store App" target="_blank">GitHub</a>
+									</button>
+								</div>
+							</div>
+						</li> -->
 
-    <div class="header-content-container">
-
-      <div class="head-image">
-        <div class="headings" id="headings">
-          <h1 id="name">Moe Abbas</h1>
-          <h2 id="position">Front-End</h2>
-          <h2>Web Developer</h2>
-        </div>
-        <div class="whole-head">
-          <img id="head-image" src="./assets/misc-images/me-head.png" alt="top part of cartoon head of developer">
-        </div>
-      </div>
-      <div class="about-me-info">
-        <p id="about-me-text">Enthusiast of tech and storytelling.<br> Lover of comics and coffee.<br> Dabbler of
-          fitness.<br> Cat Dad.</p>
-      </div>
-      <div class="contact-container" id="contact-container">
-        <h1>Contact</h1>
-        <ul class="contact-methods" id="contact-methods">
-          <li class="contact-link">
-            <a aria-label="Contact Moe Via Email" href="mailto:mabbas@mabbas.codes" target="_blank"><img
-                alt="Email Icon" aria-hidden class="contact-icon" id="email-icon"
-                src="assets/misc-images/email-icon.svg"><span class="visually-hidden">LinkedIn</span></a>
-          </li>
-          <li class="contact-link">
-            <a aria-label="Go to Moe's LinkedIn Page" href="https://www.linkedin.com/in/moe-m-abbas"
-              target="_blank"><img alt="LinkedIn Icon" aria-hidden class="contact-icon" id="linkedin-icon"
-                src="assets/misc-images/linkedin-logo.png"><span class="visually-hidden">LinkedIn</span></a>
-          </li>
-          <li class="contact-link">
-            <a aria-label="Go to Moe's GitHub Page" href="https://www.github.com/mabbas1138" target="_blank"><img
-                alt="GitHub Icon" aria-hidden class="contact-icon" id="github-icon"
-                src="assets/program-badges/github-white.png"><span class="visually-hidden">GitHub</span></a>
-          </li>
-          <li class="contact-link">
-            <a aria-label="Go to Moe's Twitter feed" href="https://twitter.com/mmabbstar" target="_blank"><img
-                alt="Twitter Icon" aria-hidden class="contact-icon" id="twitter-icon"
-                src="./assets/misc-images/twitter-blue.png"><span class="visually-hidden">Twitter</span></a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-  </header>
-
-  <main class="inner-wrapper clearfix" id="main">
-
-    <section class="know-learn-section" id="toolbox">
-      <div class="list" id="languages-list">
-        <h1 class="list-heading">Languages</h1>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/html5.svg" class="badges" alt="">
-          <p class="badge-name">HTML5</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/css3.svg" class="badges" alt="">
-          <p class="badge-name">CSS3</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/js-logo.png" class="badges" alt="">
-          <p class="badge-name">JavaScript</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/typescript-logo.png" class="badges" alt="">
-          <p class="badge-name">TypeScript</p>
-        </div>
-      </div>
-      <div class="list" id="libraries-list">
-        <h1 class="list-heading">Libraries/Frameworks</h1>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/jquery.svg" class="badges" alt="">
-          <p class="badge-name">jQuery</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/react.svg" class="badges" alt="">
-          <p class="badge-name">React</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/vue-badge.svg" class="badges" alt="">
-          <p class="badge-name">Vue</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/redux.png" class="badges" alt="">
-          <p class="badge-name">Redux</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/sass-logo.svg" class="badges" alt="">
-          <p class="badge-name">Sass</p>
-        </div>
-      </div>
-      <div class="list" id="tools-list">
-        <h1 class="list-heading" id="tools-heading">Tools</h1>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/gsap-badge.svg" class="badges" alt="">
-          <p class="badge-name" id="gsap-badge">GSAP</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/webpack-icon.svg" class="badges" alt="">
-          <p class="badge-name">Webpack</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/firebase-logo.svg" class="badges" alt="" id="firebase-icon">
-          <p class="badge-name">Firebase</p>
-        </div>
-      </div>
-      <div class="list" id="learning-list">
-        <h1 class="list-heading">Currently Learning</h1>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/angular-badge.png" class="badges" alt="" id="angular-badge">
-          <p class="badge-name">Angular</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/dodds-testing-logo.png" class="badges" alt="" id="test-badge">
-          <p class="badge-name">JS Testing</p>
-        </div>
-
-        <div class="badge-entry">
-          <img src="./assets/program-badges/node-js-badge.png" class="badges" alt="" id="nodejs-badge">
-          <p class="badge-name">Node JS</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/python.png" class="badges" alt="" id="php-badge">
-          <p class="badge-name">Python</p>
-        </div>
-        <div class="badge-entry">
-          <img src="./assets/program-badges/php-badge.png" class="badges" alt="" id="php-badge">
-          <p class="badge-name">PHP</p>
-        </div>
-      </div>
-      </div>
-    </section>
-    <section class="projects-section" id="my-work">
-      <div id="animate">
-        <h1 class="projects-title">My Work</h1>
-        <div class="work-nav filter flex-row">
-          <div class="project-type all-projects filter" id="all-projects">
-            <p>All</p>
-          </div>
-          <div class="project-type vanilla-projects filter" id="vanilla-projects">
-            <p>Vanilla JS</p>
-          </div>
-          <div class="project-type vue-projects filter" id="vue-projects">
-            <p>Vue</p>
-          </div>
-          <div class="project-type react-projects filter" id="react-projects">
-            <p>React</p>
-          </div>
-          <div class="project-type noJS-projects filter" id="noJS-projects">
-            <p>HTML-CSS</p>
-          </div>
-        </div>
-
-        <div class="work-container flex-row wrap">
-          <ul class="project-list">
-
-            <li class="project-card" id="vanilla-js">
-              <img src="/assets/misc-images/budget-tracker.png" alt="">
-              <div class="modal">
-                <div class="modal-content">
-                  <p>Budget Tracker</p>
-                  <p>Input and view income and expenses.</p>
-                  <p>VanillaJS (MVC pattern), plain CSS.</p>
-                  <button class="project-button">
-                    <a href="https://mabbas.codes/budget-app/" aria-hidden
-                      aria-label="Go to Moe's Live Site for Budget Tracker App" target="_blank">Live</a>
-                  </button>
-                  <button class="project-button">
-                    <a href="https://github.com/mabbas1138/expense-tracker" aria-hidden
-                      aria-label="Go to Moe's GitHub Repo for Budget Tracker App" target="_blank">GitHub</a>
-                  </button>
-                </div>
-              </div>
-            </li>
-
-            <li class="project-card" id="vue">
-              <img src="/assets/misc-images/vue-store.png" alt="" id="expense-img">
-              <div class="modal">
-                <div class="modal-content">
-                  <p>A Boutique of Oddities</p>
-                  <p>Mock online store.</p>
-                  <p>Vue, Vuex, Vue Router, Sass, Webpack.</p>
-
-                  <button class="project-button">
-                    <a href="https://mabbas.codes/vue-store/" aria-hidden
-                      aria-label="Go to Moe's Live Site for Vue Store App" target="_blank">Live</a>
-                  </button>
-                  <button class="project-button">
-                    <a href="https://github.com/mabbas1138/vue-store" aria-hidden
-                      aria-label="Go to Moe's GitHub Repo for Vue Store App" target="_blank">GitHub</a>
-                  </button>
-                </div>
-              </div>
-            </li>
-
-            <li class="project-card" id="react">
-              <img src="/assets/misc-images/meme-site.jpeg" alt="">
-              <div class="modal">
-                <div class="modal-content">
-                  <p>Meme in a Giphy</p>
-                  <p>Meme generator using Giphy API.</p>
-                  <p>Four-person group project at HackerYou.</p>
-                  <p>React, Firebase, Sass.</p>
-                  <button class="project-button">
-                    <a href="https://meme-in-a-giffy.firebaseapp.com/" aria-hidden
-                      aria-label="Go to Moe's Live Site for Meme in a Giffy App" target="_blank">Live</a>
-                  </button>
-                  <button class="project-button">
-                    <a href="https://github.com/meme-in-a-giffy/meme-in-a-giffy" aria-hidden
-                      aria-label="Go to Moe's GitHub Repo for Meme in a Giffy App" target="_blank">GitHub</a>
-                  </button>
-                </div>
-              </div>
-            </li>
-
-            <li class="project-card" id="noJS">
-              <img src="/assets/misc-images/planted-site.png" alt="">
-              <div class="modal">
-                <div class="modal-content">
-                  <p>Planted Site</p>
-                  <p>PSD conversion into multi-page site.</p>
-                  <p>HTML, CSS3, Sass.</p>
-                  <button class="project-button">
-                    <a href="https://www.mabbas.codes/planted/" aria-hidden aria-label="Go to Moe's Live Planted Site"
-                      target="_blank">Live</a>
-                  </button>
-                  <button class="project-button">
-                    <a href="https://github.com/mabbas1138/moe-abbas-project2" aria-hidden
-                      aria-label="Go to Moe's GitHub Repo for Planted Site" target="_blank">GitHub</a>
-                  </button>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <p class="copyright footer-text">Copyright &copy; Moe Abbas 2019</p>
-      <a class="drawing-credit footer-text" href="https://phenrix.wixsite.com/arts" aria-hidden
-        aria-label="Go to Juan's Portfolio Site" target="_blank">Illustration by Juan Enriquez</a>
-      <p class="footer-text built">Built using jQuery and GSAP</p>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-  </script>
-  <script src="scripts/plugins/TweenMax.min.js">
-  </script>
-
-  </script>
-  <script src="scripts/plugins/SplitText.min.js">
-  </script>
-  <script src="scripts/plugins/CSSPlugin.min.js">
-  </script>
-  <script src="scripts/plugins/CustomEase.min.js">
-  </script>
-  <script src="scripts/plugins/CustomWiggle.min.js">
-  </script>
-  <script src="scripts/plugins/ScrollToPlugin.min.js">
-  </script>
-
-  <script src="./scripts/app.js"></script>
-
+						<li class="project-card" id="react">
+							<img src="/assets/misc-images/meme-site.jpeg" alt="screenshot of meme site project">
+							<div class="modal">
+								<div class="modal-content">
+									<h1>Meme in a Giphy</h1>
+									<p>API-sourced Meme generator.</p>
+									<p>React, Firebase, Sass. Group Project.</p>
+									<button class="project-button">
+										<a href="https://meme-in-a-giffy.firebaseapp.com/" aria-hidden
+											aria-label="Go to Moe's Live Site for Meme in a Giffy App" target="_blank">Live</a>
+									</button>
+									<button class="project-button">
+										<a href="https://github.com/meme-in-a-giffy/meme-in-a-giffy" aria-hidden
+											aria-label="Go to Moe's GitHub Repo for Meme in a Giffy App" target="_blank">GitHub</a>
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="project-card" id="noJS">
+							<img src="/assets/misc-images/planted-site.png" alt="screeenshot of planted site project">
+							<div class="modal">
+								<div class="modal-content">
+									<h1>Planted Site</h1>
+									<p>PSD conversion into multi-page site.</p>
+									<p>HTML5, Sass.</p>
+									<button class="project-button">
+										<a href="https://www.mabbas.codes/planted/" aria-hidden aria-label="Go to Moe's Live Planted Site"
+											target="_blank">Live</a>
+									</button>
+									<button class="project-button">
+										<a href="https://github.com/mabbas1138/planted" aria-hidden
+											aria-label="Go to Moe's GitHub Repo for Planted Site" target="_blank">GitHub</a>
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<span class="bl-icon-close far fa-times-circle fa-3x"></span>
+			</section>
+			<section class="skills-section">
+				<div class="bl-box">
+					<img src="./assets/misc-images/skills.png" class="img skills-img" alt="skill icon for skills section">
+					<h2 class="bl-icon bl-icon-blog">Skills</h2>
+				</div>
+				<div class="bl-content">
+					<h2>How I Make Apps</h2>
+					<div class="list" id="skills-list">
+						<h1 class="know-heading">Tech Stack</h1>
+						<div class="list-grid">
+							<div class="badge-entry">
+								<img src="./assets/program-badges/html5.svg" class="badges" alt="HTML5 badge">
+								<p class="badge-name">HTML5</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/css3.svg" class="badges" alt="CSS3 badge">
+								<p class="badge-name">CSS3</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/js-logo.png" class="badges" alt="JavaScript badge">
+								<p class="badge-name">JavaScript</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/typescript-logo.png" class="badges" alt="TypeScript badge">
+								<p class="badge-name">TypeScript</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/jquery.svg" class="badges" alt="jQuery badge">
+								<p class="badge-name">jQuery</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/react.svg" class="badges" alt="React badge">
+								<p class="badge-name react-name">React</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/redux.png" class="badges" alt="Redux badge">
+								<p class="badge-name redux-name">Redux</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/vue-badge.svg" class="badges" id="vue-icon" alt="Vue badge">
+								<p class="badge-name vue-name">Vue</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/sass-logo.svg" class="badges" alt="Sass badge">
+								<p class="badge-name sass-name">Sass</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/gsap-badge.svg" class="badges" alt="GSAP badge">
+								<p class="badge-name gsap-name">GSAP</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/webpack-icon.svg" class="badges" alt="">
+								<p class="badge-name webpack-name">Webpack</p>
+							</div>
+							<div class="badge-entry">
+								<img src="./assets/program-badges/firebase-logo.svg" class="badges" alt="Firebase badge" id="firebase-icon">
+								<p class="badge-name firebase-name">Firebase</p>
+							</div>
+						</div>
+					</div>
+					<div id="learning-container">
+						<h1 class="list-heading">Currently Learning</h1>
+						<div class="learning-list">
+							<p>Node.js</p>
+							<p>Jest, Express</p>
+							<h1 class="list-heading">Future Learning</h1>
+							<p class="end-text">Front-End</p>
+							<p>Angular</p>
+							<p>Three.js</p>
+							<p class="end-text">Back-End</p>
+							<p>Python</p>
+							<p>PHP</p>
+						</div>
+					</div>
+				</div>
+				<span class="bl-icon-close far fa-times-circle fa-3x"></span>
+			</section>
+			<section class="contact-section">
+				<div class="bl-box">
+					<img src="./assets/misc-images/blog.png" class="img blog-img" alt="">
+					<h2 class="bl-icon bl-icon-contact">Blog</h2>
+				</div>
+				<div class="bl-content clearfix">
+					<h2>Blog</h2>
+					<p class="contact-intro">I'm particularly interested in the web's potential for interactive storytelling, whether the goal is to educate, provide a service, or simply to entertain.</p>
+					<p>I'll be blogging about my discoveries and experience with story-driven creative coding, with the hope that it inspires others to dip their toes into this overlooked area of web development!</p>
+				</div>
+				<span class="bl-icon-close far fa-times-circle fa-3x"></span>
+			</section>
+		</div>
+	</div>
+	</div>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+	$(function () {
+		PortfolioGrid.init();
+	});
+</script>
+<script src="./scripts/script.js"></script>
+</body>
 </html>
